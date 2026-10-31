@@ -1,0 +1,6 @@
+genlayer-test>=0.29
+genvm-linter>=0.1
+pytest>=8.0
+requests>=2.31
+Pillow>=10.0
+imageio-ffmpeg>=0.5

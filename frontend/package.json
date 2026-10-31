@@ -1,0 +1,19 @@
+{
+  "name": "arena-veritas-frontend",
+  "private": true,
+  "version": "1.0.0",
+  "description": "ArenaVeritas Broadcast Control Room and Match Integrity Desk",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "genlayer-js": "0.28.7",
+    "viem": "^2.21.0"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0"
+  }
+}

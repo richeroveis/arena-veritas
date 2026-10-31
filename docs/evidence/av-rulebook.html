@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><title>ArenaVeritas Official Rulebook // Integrity Bands</title></head>
+<body>
+<h1>ArenaVeritas Competitive Integrity Rulebook (v1)</h1>
+<p>All finals are settled by discrete consensus verdict bands computed on a 500 bps
+quantized grid over two measures: the telemetry INTEGRITY BASELINE (higher is cleaner)
+and the input/frame ANOMALY INDEX (higher means more cheat-like signatures).</p>
+<h2>Band definitions</h2>
+<ul>
+<li>VERIFIED_CHAMPION_PAYOUT: integrity at or above 8500 bps AND anomaly at or below
+1000 bps AND no rule infraction. 100 percent of the prize pool to the verified winner,
+full anti-cheat bond return to both finalists.</li>
+<li>SPLIT_DRAW_SETTLEMENT: a server interruption or dead heat is verified by the
+official telemetry page. Prize splits 50/50, full bond return to both finalists.</li>
+<li>RULE_VIOLATION_PENALTY: a minor rule or settings infraction is confirmed, or the
+telemetry sits between clean and cheat thresholds. 75 percent of the prize to the
+compliant opponent, 25 percent refunded to the organizer, a minor 10 percent deduction
+of the violating finalist anti-cheat bond.</li>
+<li>CHEAT_DISQUALIFICATION_SLASH: aimbot, macro, replay splice or other concrete cheat
+evidence, or an anomaly index at or above 3000 bps. The violating finalist is
+disqualified, the entire anti-cheat bond is slashed to the clean opponent and the
+protestant, and the clean opponent is awarded the prize pool.</li>
+</ul>
+<h2>Window rules</h2>
+<p>Verification only becomes possible after match_close_epoch. Settlement only becomes
+possible after protest_deadline_epoch. Unverified or uncontested brackets refund the
+full organizer escrow and every bond after verification_timeout_epoch.</p>
+</body>
+</html>

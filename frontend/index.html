@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ArenaVeritas // Match Integrity Desk</title>
+  <link rel="icon" type="image/png" href="./logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./src/styles.css" />
+</head>
+<body>
+  <header class="hud">
+    <div class="brand">
+      <img src="./logo.png" alt="ArenaVeritas emblem" width="42" height="42" />
+      <div>
+        <h1>ARENA<span>VERITAS</span></h1>
+        <p class="sub">BROADCAST CONTROL ROOM // MATCH INTEGRITY SETTLEMENT DESK</p>
+      </div>
+    </div>
+    <div class="hud-right">
+      <span id="chain-badge" class="badge">STUDIONET 61999</span>
+      <span id="custody-led" class="led">VAULT --</span>
+      <button id="btn-metamask" class="btn ghost">META MASK</button>
+      <button id="btn-burner" class="btn lime">1-CLICK BURNER COMPETITOR</button>
+      <span id="wallet-addr" class="mono small"></span>
+    </div>
+  </header>
+
+  <main class="grid">
+    <!-- Pod 1: bracket + custody ticker -->
+    <section class="pod" id="pod-brackets">
+      <h2><span class="tick">01</span> LIVE TOURNAMENT BRACKET &amp; PRIZE CUSTODY TICKER</h2>
+      <div id="bracket-list" class="stack">
+        <p class="mono dim">Synchronizing with studionet...</p>
+      </div>
+      <div class="ledger-strip">
+        <div><span class="dim">AVT VAULT</span><b id="led-vault" class="mono">--</b></div>
+        <div><span class="dim">ESCROWED PRIZES</span><b id="led-escrow" class="mono">--</b></div>
+        <div><span class="dim">BONDS LOCKED</span><b id="led-bonds" class="mono">--</b></div>
+        <div><span class="dim">SOFT-FAIL REFUNDABLE</span><b id="led-refund" class="mono">--</b></div>
+        <div><span class="dim">SETTLED / VOID / ABANDONED</span><b id="led-counts" class="mono">--</b></div>
+      </div>
+      <div class="wallet-only">
+        <span class="dim">MY CUSTODY LEDGER</span>
+        <b id="led-me-avt" class="mono">AVT --</b>
+        <b id="led-me-ref" class="mono">REFUNDABLE --</b>
+        <button id="btn-claim-refund" class="btn lime small-btn">claim_refundable_balance</button>
+      </div>
+    </section>
+
+    <!-- Pod 2: frame tick analyzer -->
+    <section class="pod" id="pod-analyzer">
+      <h2><span class="tick">02</span> FRAME-TICK &amp; REPLAY INTEGRITY ANALYZER</h2>
+      <label class="slider">FRAME-TIME VARIANCE (ms drift)
+        <input type="range" id="sl-frame" min="0" max="100" value="10" /><output id="out-frame">10</output>
+      </label>
+      <label class="slider">INPUT-TICK ENTROPY (macro signature)
+        <input type="range" id="sl-entropy" min="0" max="100" value="5" /><output id="out-entropy">5</output>
+      </label>
+      <label class="slider">SERVER PACKET LOSS (%)
+        <input type="range" id="sl-loss" min="0" max="100" value="0" /><output id="out-loss">0</output>
+      </label>
+      <div class="chks">
+        <label><input type="checkbox" id="ck-draw" /> Server interruption / dead heat verified</label>
+        <label><input type="checkbox" id="ck-viol" /> Minor rule / settings infraction</label>
+        <label><input type="checkbox" id="ck-cheat" /> Aimbot / macro / splice signature</label>
+      </div>
+      <div class="quant-readout">
+        <div>QUANTIZED INTEGRITY BASELINE <b id="q-integrity" class="mono">---- bps</b></div>
+        <div>QUANTIZED ANOMALY INDEX <b id="q-anomaly" class="mono">---- bps</b></div>
+      </div>
+      <div id="band-preview" class="band neutral">SELECT A BRACKET TO PREVIEW SETTLEMENT BAND</div>
+      <p class="dim tiny">Referee preview only. The authoritative verdict is produced by on-chain
+        validator consensus over the pinned telemetry and rulebook URLs (500-bps quantized grid,
+        exact-match equivalence). Preview is non-authoritative.</p>
+    </section>
+
+    <!-- Pod 3: equivalence + protest docket -->
+    <section class="pod wide" id="pod-docket">
+      <h2><span class="tick">03</span> REFEREE EQUIVALENCE &amp; PROTEST DOCKET CONSOLE</h2>
+      <div class="docket-grid">
+        <div id="docket-detail" class="stack">
+          <p class="mono dim">Pick a bracket from the ticker to inspect its consensus transcript,
+            protest window and temporal gates.</p>
+        </div>
+        <div class="actions">
+          <h3>DESK ACTIONS (connected wallet)</h3>
+          <div id="action-panel" class="act-grid">
+            <button class="btn" data-act="bond" disabled>POST ANTI-CHEAT BOND</button>
+            <button class="btn" data-act="submit" disabled>SUBMIT TELEMETRY</button>
+            <button class="btn" data-act="protest" disabled>FILE ANTI-CHEAT PROTEST</button>
+            <button class="btn crimson" data-act="verify" disabled>VERIFY MATCH TELEMETRY</button>
+            <button class="btn lime" data-act="settle" disabled>CLAIM SETTLEMENT</button>
+            <button class="btn" data-act="abandon" disabled>ABANDONED MATCH REFUND</button>
+          </div>
+          <h3>SOFT-FAIL GUARD DIAGNOSTICS</h3>
+          <p id="guard-diag" class="mono dim small">No payable rejection recorded for this wallet.</p>
+          <h3>BROADCAST REEL</h3>
+          <video controls preload="metadata" src="./demo-video-subtitled.mp4"></video>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="hud foot">
+    <span class="mono small">CONTRACT <a id="contract-link" class="mono" target="_blank" rel="noopener">--</a></span>
+    <span class="mono small dim">AI-verified esports, speedrun and competitive match integrity settlement on GenLayer</span>
+  </footer>
+  <div id="toast" class="toast hidden"></div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
