@@ -27,3 +27,6 @@ Thumbs.db
 # Whitelisted demo assets
 !docs/demo-video-subtitled.mp4
 !frontend/public/demo-video-subtitled.mp4
+
+# local bisect probes (studionet diagnostics, not part of the submission)
+probes/

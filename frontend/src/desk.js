@@ -1,12 +1,12 @@
 // GenLayer desk wiring. Uses genlayer-js with no local abi override: calls are
 // made by function name and decoded by the SDK against the chain schema.
 import { createClient } from "genlayer-js";
+import { studionet } from "genlayer-js/chains";
 import { generatePrivateKey } from "viem/accounts";
 
 const ADDRESS = import.meta.env.VITE_CONTRACT_ADDRESS;
-const CHAIN = "studionet";
 
-export let client = createClient({ chain: CHAIN });
+export let client = createClient({ chain: studionet });
 export let wallet = null; // { address, source: "burner" | "metamask" }
 
 // Initial page load budget: 2 RPC calls (leaderboard + custody summary).
@@ -33,7 +33,7 @@ export async function loadWalletLedger(address) {
 
 export async function connectBurner() {
   const pk = generatePrivateKey();
-  client = createClient({ chain: CHAIN, account: { privateKey: pk } });
+  client = createClient({ chain: studionet, account: { privateKey: pk } });
   const address = await client.account.getAddress();
   wallet = { address, source: "burner" };
   return wallet;

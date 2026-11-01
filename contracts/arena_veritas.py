@@ -1,11 +1,12 @@
 # { "Depends": "py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6" }
+from dataclasses import dataclass
+
+from genlayer import *
+
 # ArenaVeritas: AI-verified esports/speedrun integrity settlement desk.
 # AVT prize custody vault, native anti-cheat bonds, protest challenge window,
 # 4 consensus verdict bands, zero-winner/timeout refunds. Funded payables never
 # revert: failures on value-bearing calls credit refundable_balances instead.
-from dataclasses import dataclass
-
-from genlayer import *
 
 BAND_VERIFIED = "VERIFIED_CHAMPION_PAYOUT"
 BAND_SPLIT = "SPLIT_DRAW_SETTLEMENT"
@@ -225,12 +226,12 @@ class ArenaVeritas(gl.Contract):
     void_count: u256
     abandoned_refund_count: u256
 
-    def __init__(self, avt_token_address: str, token_symbol: str):
+    def __init__(self, avt_token_address: Address, token_symbol: str):
         self.admin = gl.message.sender_address
         self.paused = False
         if not 0 < len(token_symbol) <= 16:
             raise gl.vm.UserError(f"{ERROR_EXPECTED} bad token symbol")
-        self.avt_token_address = Address(avt_token_address)
+        self.avt_token_address = avt_token_address if isinstance(avt_token_address, Address) else Address(avt_token_address)
         self.token_symbol = token_symbol
 
     @gl.private
