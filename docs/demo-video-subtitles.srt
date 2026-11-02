@@ -1,0 +1,51 @@
+1
+00:00:00,300 --> 00:00:05,600
+ArenaVeritas  the AI verified integrity desk for esports and speedruns
+
+2
+00:00:06,200 --> 00:00:09,400
+Live bracket view: four finals  ten AVT held in the prize custody vault
+
+3
+00:00:09,700 --> 00:00:13,600
+Every bracket escrows its prize pool before a single competitor bond lands
+
+4
+00:00:13,900 --> 00:00:17,600
+Anti-cheat bonds arrive from separate signer wallets in native value
+
+5
+00:00:18,300 --> 00:00:21,800
+Frame tick analyzer maps telemetry onto the 500 bps integrity grid
+
+6
+00:00:22,100 --> 00:00:25,400
+Anomaly index and integrity baseline snap to the discrete quantized ladder
+
+7
+00:00:25,700 --> 00:00:27,700
+Verdict band derives from the quantized pair  not from a raw float
+
+8
+00:00:28,300 --> 00:00:32,000
+Protest docket console  a filed challenge locks its own protest bond
+
+9
+00:00:32,300 --> 00:00:36,200
+Validators re render telemetry and rulebook independently on chain
+
+10
+00:00:36,500 --> 00:00:39,700
+Prompt comparative settlement demands exact equality on all seven fields
+
+11
+00:00:40,300 --> 00:00:43,400
+Settlement unlocks only after the protest deadline has passed
+
+12
+00:00:43,700 --> 00:00:45,700
+Custody invariants assert in the same transaction that pays out
+
+13
+00:00:46,200 --> 00:00:49,600
+ArenaVeritas on studionet  contract 0x1eC61228C0311150cAe42Af4d1C6C0bF847fc058

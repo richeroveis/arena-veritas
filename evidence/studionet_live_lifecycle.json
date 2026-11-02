@@ -1,0 +1,3519 @@
+{
+ "project": "ArenaVeritas",
+ "contract_address": "0x1eC61228C0311150cAe42Af4d1C6C0bF847fc058",
+ "chain": "studionet",
+ "chain_id": 61999,
+ "deploy_tx": "0x43c78b2806abc474831ad18e803732ffd5a0b4bc48a1a5b70d2980f36e27a83e",
+ "contract_sha256": "5daf9b09cebffb8026d1515eebc73667830fea0dbc7f64375a5bd905ee92b58d",
+ "runner_pin": "py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6",
+ "explorer_base": "https://explorer-studio.genlayer.com/tx/",
+ "signers": {
+  "organizer": "0x154a452b0755EE812014C1405B15D905BA06f9c7",
+  "finalist_a": "0xFa502b70Aca68C3a540302ba2115F3579C4cacDc",
+  "finalist_b": "0x38963bB05305cC22f357Dc87ef287e6f132941A5",
+  "bystander": "0x304F6Bb2E22C7C227AFC4A78F26ae5099649B1b0"
+ },
+ "windows_secs": {
+  "submission": 1200,
+  "match": 300,
+  "protest": 900,
+  "verification_timeout": 3600
+ },
+ "notes": [
+  {
+   "kind": "retry_after_failed_execution",
+   "label": "register_cs2",
+   "tx": "0x6d259bc64cb0996aeef28bc9d0ff4a6fa28fe235211f95cab5f961032e7b3015",
+   "observed": [
+    ".exit_code 1",
+    ".idle"
+   ]
+  },
+  {
+   "kind": "retry_after_failed_execution",
+   "label": "register_elden",
+   "tx": "0x6903274bacb667d0d13fd9eabbbc21d37c1aa1f8d5b231c1feec69c8556b7e5e",
+   "observed": [
+    ".idle",
+    ".exit_code 1"
+   ]
+  },
+  {
+   "kind": "retry_after_failed_execution",
+   "label": "register_val",
+   "tx": "0xe447036e7b53790192ce055e44407d5c8bbbad2716581c6449e37d1ef38acce4",
+   "observed": [
+    ".exit_code 1",
+    ".idle"
+   ]
+  },
+  {
+   "kind": "retry_after_failed_execution",
+   "label": "register_dota",
+   "tx": "0x7ad4a3dd7c8e030eae7d2d2dc3bed53515f3c85e681de69b58aee59025b11493",
+   "observed": [
+    ".exit_code 1",
+    ".idle"
+   ]
+  },
+  {
+   "kind": "retry_after_failed_execution",
+   "label": "register_valf",
+   "tx": "0x81b0e6f54704ded01eaa8df9a03e4f9d0c1fc757fa7ac4be28950473981fcc73",
+   "observed": [
+    ".exit_code 1",
+    ".idle"
+   ]
+  },
+  {
+   "kind": "retry_after_failed_execution",
+   "label": "register_cs2f",
+   "tx": "0xba3452ba5a16e5905f6982db7861c04a1f09bf6f4a3f0160815dc70ffb5c4bee",
+   "observed": [
+    ".idle",
+    ".exit_code 1"
+   ]
+  },
+  {
+   "kind": "retry_after_failed_execution",
+   "label": "register_eldenf",
+   "tx": "0x1ab4c2c84d073a33081dcf4a52bdb8b94e9c8f931fb6177977f7e4a8346c03fc",
+   "observed": [
+    ".exit_code 1",
+    ".idle"
+   ]
+  },
+  {
+   "kind": "retry_after_failed_execution",
+   "label": "register_dotaf",
+   "tx": "0x622e076f04c00520725b528e5cb498369ffa956dd697e68d0a6c3fd6767fffc5",
+   "observed": [
+    ".idle",
+    ".exit_code 1"
+   ]
+  },
+  {
+   "kind": "soft_fail_payable",
+   "tx": "0xda9f3e1e322a5a54ce468af3072e93c195994c355baa300567f0f051023d49f1",
+   "status": "FINALIZED",
+   "expectation": "no revert with value > 0; credit lands in refundable_balances",
+   "observed_refundable_wei": "10000000000000000",
+   "observed_last_rejection": "caller is not a listed finalist"
+  },
+  {
+   "kind": "soft_fail_payable",
+   "tx": "0xda9f3e1e322a5a54ce468af3072e93c195994c355baa300567f0f051023d49f1",
+   "status": "FINALIZED",
+   "expectation": "no revert with value > 0; credit lands in refundable_balances",
+   "observed_refundable_wei": "10000000000000000",
+   "observed_last_rejection": "caller is not a listed finalist"
+  },
+  {
+   "kind": "post_verify_read",
+   "match_id": "cs2f",
+   "status": "ACTIVE",
+   "verdict_band": "",
+   "verified_winner_slot": "",
+   "integrity_bps": "0",
+   "anomaly_bps": "0"
+  },
+  {
+   "kind": "post_verify_read",
+   "match_id": "valf",
+   "status": "VERIFIED",
+   "verdict_band": "SPLIT_DRAW_SETTLEMENT",
+   "verified_winner_slot": "DRAW",
+   "integrity_bps": "7500",
+   "anomaly_bps": "500"
+  },
+  {
+   "kind": "post_verify_read",
+   "match_id": "eldenf",
+   "status": "VERIFIED",
+   "verdict_band": "CHEAT_DISQUALIFICATION_SLASH",
+   "verified_winner_slot": "FINALIST_B",
+   "integrity_bps": "5000",
+   "anomaly_bps": "4000"
+  }
+ ],
+ "native_wei": {
+  "before": {
+   "contract": "0x8c06e18a77b10000",
+   "organizer": "0x1f6a74a191eed2800",
+   "finalist_a": "0x44b1eec6162f0000",
+   "finalist_b": "0x44f8fcaaf5b10000",
+   "bystander": "0x45400a8fd5330000"
+  },
+  "after": {
+   "contract": "0x8c2a687ce7720000",
+   "organizer": "0x1f6a74a191eed2800",
+   "finalist_a": "0x44b1eec6162f0000",
+   "finalist_b": "0x44d575b885f00000",
+   "bystander": "0x45400a8fd5330000"
+  }
+ },
+ "transactions": [
+  {
+   "label": "fund_vault",
+   "functionName": "fund_prize_vault_payable",
+   "args": [],
+   "value": "10000000000000000000",
+   "hash": "0x81e53fac321d43b4d812460ebd0dd0b20932db9b6817867ee08f36a81e1c1c2e",
+   "status": "FINALIZED",
+   "lifecycle_status": "WAIT_ERROR",
+   "result": null,
+   "error": "An unknown RPC error occurred.\n\nDetails: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON\nVersion: viem@2.57.13",
+   "explorer": {
+    "explorer_status": "FINALIZED",
+    "explorer_block": null,
+    "leader_execution_result": null,
+    "votes": {
+     "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "agree",
+     "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "idle",
+     "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "agree",
+     "0x5e84e17266a193077728229751aC8A1dD24be146": "idle",
+     "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "agree"
+    },
+    "validators": [
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".&.avt_balance.........avt_credited.........ok..vault_custody_balance........"
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".&.avt_balance.........avt_credited.........ok..vault_custody_balance........"
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     }
+    ],
+    "distinct_results": [
+     ".&.avt_balance.........avt_credited.........ok..vault_custody_balance........",
+     ".idle"
+    ]
+   }
+  },
+  {
+   "label": "register_cs2",
+   "functionName": "register_tournament_payable",
+   "args": [
+    "cs2",
+    "CS2 Major Grand Final",
+    "CS2",
+    "2000000000000000000",
+    "10000000000000000",
+    "10000000000000000",
+    "https://raw.githubusercontent.com/richeroveis/arena-veritas/main/docs/evidence/cs2-major-telemetry.html",
+    "https://raw.githubusercontent.com/richeroveis/arena-veritas/main/docs/evidence/av-rulebook.html",
+    "900",
+    "300",
+    "900",
+    "3600",
+    "0xFa502b70Aca68C3a540302ba2115F3579C4cacDc",
+    "0x38963bB05305cC22f357Dc87ef287e6f132941A5"
+   ],
+   "value": "0",
+   "hash": "0x6d259bc64cb0996aeef28bc9d0ff4a6fa28fe235211f95cab5f961032e7b3015",
+   "status": "FINALIZED",
+   "lifecycle_status": "ACCEPTED",
+   "result": 6,
+   "error": null,
+   "explorer": {
+    "explorer_status": "FINALIZED",
+    "explorer_block": null,
+    "leader_execution_result": null,
+    "votes": {
+     "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "agree",
+     "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "idle",
+     "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+     "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "agree",
+     "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "idle"
+    },
+    "validators": [
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".exit_code 1"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".exit_code 1"
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     }
+    ],
+    "distinct_results": [
+     ".exit_code 1",
+     ".idle"
+    ]
+   }
+  },
+  {
+   "label": "register_elden",
+   "functionName": "register_tournament_payable",
+   "args": [
+    "elden",
+    "Elden Ring Any% Speedrun WR Verification",
+    "EldenRing",
+    "2000000000000000000",
+    "10000000000000000",
+    "10000000000000000",
+    "https://raw.githubusercontent.com/richeroveis/arena-veritas/main/docs/evidence/elden-ring-anypercent-telemetry.html",
+    "https://raw.githubusercontent.com/richeroveis/arena-veritas/main/docs/evidence/av-rulebook.html",
+    "900",
+    "300",
+    "900",
+    "3600",
+    "0xFa502b70Aca68C3a540302ba2115F3579C4cacDc",
+    "0x38963bB05305cC22f357Dc87ef287e6f132941A5"
+   ],
+   "value": "0",
+   "hash": "0x6903274bacb667d0d13fd9eabbbc21d37c1aa1f8d5b231c1feec69c8556b7e5e",
+   "status": "FINALIZED",
+   "lifecycle_status": "ACCEPTED",
+   "result": 6,
+   "error": null,
+   "explorer": {
+    "explorer_status": "FINALIZED",
+    "explorer_block": null,
+    "leader_execution_result": null,
+    "votes": {
+     "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "agree",
+     "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "idle",
+     "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "agree",
+     "0xCe0B66448435cA53665C954705Abd753515594Cf": "idle",
+     "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "agree"
+    },
+    "validators": [
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".exit_code 1"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".exit_code 1"
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     }
+    ],
+    "distinct_results": [
+     ".idle",
+     ".exit_code 1"
+    ]
+   }
+  },
+  {
+   "label": "register_val",
+   "functionName": "register_tournament_payable",
+   "args": [
+    "val",
+    "Valorant Sovereign Cup",
+    "Valorant",
+    "2000000000000000000",
+    "10000000000000000",
+    "10000000000000000",
+    "https://raw.githubusercontent.com/richeroveis/arena-veritas/main/docs/evidence/valorant-sovereign-telemetry.html",
+    "https://raw.githubusercontent.com/richeroveis/arena-veritas/main/docs/evidence/av-rulebook.html",
+    "900",
+    "300",
+    "900",
+    "3600",
+    "0xFa502b70Aca68C3a540302ba2115F3579C4cacDc",
+    "0x38963bB05305cC22f357Dc87ef287e6f132941A5"
+   ],
+   "value": "0",
+   "hash": "0xe447036e7b53790192ce055e44407d5c8bbbad2716581c6449e37d1ef38acce4",
+   "status": "FINALIZED",
+   "lifecycle_status": "ACCEPTED",
+   "result": 6,
+   "error": null,
+   "explorer": {
+    "explorer_status": "FINALIZED",
+    "explorer_block": null,
+    "leader_execution_result": null,
+    "votes": {
+     "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "idle",
+     "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "idle",
+     "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "agree",
+     "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "agree",
+     "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "agree"
+    },
+    "validators": [
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".exit_code 1"
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".exit_code 1"
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     }
+    ],
+    "distinct_results": [
+     ".exit_code 1",
+     ".idle"
+    ]
+   }
+  },
+  {
+   "label": "register_dota",
+   "functionName": "register_tournament_payable",
+   "args": [
+    "dota",
+    "Dota 2 Saigon Invitational",
+    "Dota2",
+    "2000000000000000000",
+    "10000000000000000",
+    "10000000000000000",
+    "https://raw.githubusercontent.com/richeroveis/arena-veritas/main/docs/evidence/dota-saigon-telemetry.html",
+    "https://raw.githubusercontent.com/richeroveis/arena-veritas/main/docs/evidence/av-rulebook.html",
+    "900",
+    "300",
+    "900",
+    "3600",
+    "0xFa502b70Aca68C3a540302ba2115F3579C4cacDc",
+    "0x304F6Bb2E22C7C227AFC4A78F26ae5099649B1b0"
+   ],
+   "value": "0",
+   "hash": "0x7ad4a3dd7c8e030eae7d2d2dc3bed53515f3c85e681de69b58aee59025b11493",
+   "status": "FINALIZED",
+   "lifecycle_status": "ACCEPTED",
+   "result": 6,
+   "error": null,
+   "explorer": {
+    "explorer_status": "FINALIZED",
+    "explorer_block": null,
+    "leader_execution_result": null,
+    "votes": {
+     "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "agree",
+     "0x336458747913FE397be82c4F0926ACeB3ab13618": "agree",
+     "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+     "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "idle",
+     "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "idle"
+    },
+    "validators": [
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".exit_code 1"
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".exit_code 1"
+     }
+    ],
+    "distinct_results": [
+     ".exit_code 1",
+     ".idle"
+    ]
+   }
+  },
+  {
+   "label": "fund_vault",
+   "functionName": "fund_prize_vault_payable",
+   "args": [],
+   "value": "10000000000000000000",
+   "hash": "0x81e53fac321d43b4d812460ebd0dd0b20932db9b6817867ee08f36a81e1c1c2e",
+   "status": "FINALIZED",
+   "lifecycle_status": "FINALIZED",
+   "result": 6,
+   "error": null,
+   "explorer": {
+    "explorer_status": "FINALIZED",
+    "explorer_block": null,
+    "leader_execution_result": null,
+    "votes": {
+     "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "agree",
+     "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "idle",
+     "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "agree",
+     "0x5e84e17266a193077728229751aC8A1dD24be146": "idle",
+     "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "agree"
+    },
+    "validators": [
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".&.avt_balance.........avt_credited.........ok..vault_custody_balance........"
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".&.avt_balance.........avt_credited.........ok..vault_custody_balance........"
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     }
+    ],
+    "distinct_results": [
+     ".&.avt_balance.........avt_credited.........ok..vault_custody_balance........",
+     ".idle"
+    ]
+   }
+  },
+  {
+   "label": "register_valf",
+   "functionName": "register_tournament_payable",
+   "args": [
+    "valf",
+    "Valorant Sovereign Cup",
+    "Valorant",
+    "2000000000000000000",
+    "10000000000000000",
+    "10000000000000000",
+    "https://raw.githubusercontent.com/richeroveis/arena-veritas/main/docs/evidence/valorant-sovereign-telemetry.html",
+    "https://raw.githubusercontent.com/richeroveis/arena-veritas/main/docs/evidence/av-rulebook.html",
+    "1200",
+    "300",
+    "900",
+    "3600",
+    "0xFa502b70Aca68C3a540302ba2115F3579C4cacDc",
+    "0x38963bB05305cC22f357Dc87ef287e6f132941A5"
+   ],
+   "value": "0",
+   "hash": "0x81b0e6f54704ded01eaa8df9a03e4f9d0c1fc757fa7ac4be28950473981fcc73",
+   "signer": "0x154a452b0755EE812014C1405B15D905BA06f9c7",
+   "status": "FINALIZED",
+   "block": null,
+   "leader_execution_result": null,
+   "validator_votes": {
+    "0x045291B293B9D68969c18B6637A8258038cf787A": "idle",
+    "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "idle",
+    "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "agree",
+    "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "agree",
+    "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "agree"
+   },
+   "validator_results": [
+    ".exit_code 1",
+    ".idle"
+   ],
+   "validators": [
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": ".exit_code 1"
+    },
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": ".exit_code 1"
+    }
+   ],
+   "waited_ms": 33962,
+   "result": null,
+   "explorer": {
+    "explorer_status": "FINALIZED",
+    "explorer_block": null,
+    "leader_execution_result": null,
+    "votes": {
+     "0x045291B293B9D68969c18B6637A8258038cf787A": "idle",
+     "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "idle",
+     "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "agree",
+     "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "agree",
+     "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "agree"
+    },
+    "validators": [
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".exit_code 1"
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".exit_code 1"
+     }
+    ],
+    "distinct_results": [
+     ".exit_code 1",
+     ".idle"
+    ]
+   }
+  },
+  {
+   "label": "register_cs2f",
+   "functionName": "register_tournament_payable",
+   "args": [
+    "cs2f",
+    "CS2 Major Grand Final",
+    "CS2",
+    "2000000000000000000",
+    "10000000000000000",
+    "10000000000000000",
+    "https://raw.githubusercontent.com/richeroveis/arena-veritas/main/docs/evidence/cs2-major-telemetry.html",
+    "https://raw.githubusercontent.com/richeroveis/arena-veritas/main/docs/evidence/av-rulebook.html",
+    "1200",
+    "300",
+    "900",
+    "3600",
+    "0xFa502b70Aca68C3a540302ba2115F3579C4cacDc",
+    "0x38963bB05305cC22f357Dc87ef287e6f132941A5"
+   ],
+   "value": "0",
+   "hash": "0xba3452ba5a16e5905f6982db7861c04a1f09bf6f4a3f0160815dc70ffb5c4bee",
+   "signer": "0x154a452b0755EE812014C1405B15D905BA06f9c7",
+   "status": "FINALIZED",
+   "block": null,
+   "leader_execution_result": null,
+   "validator_votes": {
+    "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "agree",
+    "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "idle",
+    "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "agree",
+    "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "agree",
+    "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "idle"
+   },
+   "validator_results": [
+    ".idle",
+    ".exit_code 1"
+   ],
+   "validators": [
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": ".exit_code 1"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": ".exit_code 1"
+    }
+   ],
+   "waited_ms": 34388,
+   "result": null,
+   "explorer": {
+    "explorer_status": "FINALIZED",
+    "explorer_block": null,
+    "leader_execution_result": null,
+    "votes": {
+     "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "agree",
+     "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "idle",
+     "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "agree",
+     "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "agree",
+     "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "idle"
+    },
+    "validators": [
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".exit_code 1"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".exit_code 1"
+     }
+    ],
+    "distinct_results": [
+     ".idle",
+     ".exit_code 1"
+    ]
+   }
+  },
+  {
+   "label": "register_eldenf",
+   "functionName": "register_tournament_payable",
+   "args": [
+    "eldenf",
+    "Elden Ring Any% Speedrun WR Verification",
+    "EldenRing",
+    "2000000000000000000",
+    "10000000000000000",
+    "10000000000000000",
+    "https://raw.githubusercontent.com/richeroveis/arena-veritas/main/docs/evidence/elden-ring-anypercent-telemetry.html",
+    "https://raw.githubusercontent.com/richeroveis/arena-veritas/main/docs/evidence/av-rulebook.html",
+    "1200",
+    "300",
+    "900",
+    "3600",
+    "0xFa502b70Aca68C3a540302ba2115F3579C4cacDc",
+    "0x38963bB05305cC22f357Dc87ef287e6f132941A5"
+   ],
+   "value": "0",
+   "hash": "0x1ab4c2c84d073a33081dcf4a52bdb8b94e9c8f931fb6177977f7e4a8346c03fc",
+   "signer": "0x154a452b0755EE812014C1405B15D905BA06f9c7",
+   "status": "FINALIZED",
+   "block": null,
+   "leader_execution_result": null,
+   "validator_votes": {
+    "0x007d6451555Df7765c707284F844137927aE4e5E": "idle",
+    "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "agree",
+    "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "idle",
+    "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "agree",
+    "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "agree"
+   },
+   "validator_results": [
+    ".exit_code 1",
+    ".idle"
+   ],
+   "validators": [
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": ".exit_code 1"
+    },
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": ".exit_code 1"
+    }
+   ],
+   "waited_ms": 40195,
+   "result": null,
+   "explorer": {
+    "explorer_status": "FINALIZED",
+    "explorer_block": null,
+    "leader_execution_result": null,
+    "votes": {
+     "0x007d6451555Df7765c707284F844137927aE4e5E": "idle",
+     "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "agree",
+     "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "idle",
+     "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "agree",
+     "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "agree"
+    },
+    "validators": [
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".exit_code 1"
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".exit_code 1"
+     }
+    ],
+    "distinct_results": [
+     ".exit_code 1",
+     ".idle"
+    ]
+   }
+  },
+  {
+   "label": "register_dotaf",
+   "functionName": "register_tournament_payable",
+   "args": [
+    "dotaf",
+    "Dota 2 Saigon Invitational",
+    "Dota2",
+    "2000000000000000000",
+    "10000000000000000",
+    "10000000000000000",
+    "https://raw.githubusercontent.com/richeroveis/arena-veritas/main/docs/evidence/dota-saigon-telemetry.html",
+    "https://raw.githubusercontent.com/richeroveis/arena-veritas/main/docs/evidence/av-rulebook.html",
+    "1200",
+    "300",
+    "900",
+    "3600",
+    "0xFa502b70Aca68C3a540302ba2115F3579C4cacDc",
+    "0x304F6Bb2E22C7C227AFC4A78F26ae5099649B1b0"
+   ],
+   "value": "0",
+   "hash": "0x622e076f04c00520725b528e5cb498369ffa956dd697e68d0a6c3fd6767fffc5",
+   "signer": "0x154a452b0755EE812014C1405B15D905BA06f9c7",
+   "status": "FINALIZED",
+   "block": null,
+   "leader_execution_result": null,
+   "validator_votes": {
+    "0x045291B293B9D68969c18B6637A8258038cf787A": "agree",
+    "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "agree",
+    "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "idle",
+    "0x5e84e17266a193077728229751aC8A1dD24be146": "idle",
+    "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "agree"
+   },
+   "validator_results": [
+    ".idle",
+    ".exit_code 1"
+   ],
+   "validators": [
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": ".exit_code 1"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": ".exit_code 1"
+    }
+   ],
+   "waited_ms": 47247,
+   "result": null,
+   "explorer": {
+    "explorer_status": "FINALIZED",
+    "explorer_block": null,
+    "leader_execution_result": null,
+    "votes": {
+     "0x045291B293B9D68969c18B6637A8258038cf787A": "agree",
+     "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "agree",
+     "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "idle",
+     "0x5e84e17266a193077728229751aC8A1dD24be146": "idle",
+     "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "agree"
+    },
+    "validators": [
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".exit_code 1"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".exit_code 1"
+     }
+    ],
+    "distinct_results": [
+     ".idle",
+     ".exit_code 1"
+    ]
+   }
+  },
+  {
+   "label": "register_cs2f",
+   "functionName": "register_tournament_payable",
+   "args": [
+    "cs2f",
+    "CS2 Major Grand Final",
+    "CS2",
+    "2000000000000000000",
+    "10000000000000000",
+    "10000000000000000",
+    "https://raw.githubusercontent.com/richeroveis/arena-veritas/main/docs/evidence/cs2-major-telemetry.html",
+    "https://raw.githubusercontent.com/richeroveis/arena-veritas/main/docs/evidence/av-rulebook.html",
+    "1200",
+    "300",
+    "900",
+    "3600",
+    "0xfa502b70aca68c3a540302ba2115f3579c4cacdc",
+    "0x38963bb05305cc22f357dc87ef287e6f132941a5"
+   ],
+   "value": "0",
+   "hash": "0x24b2d976df5d4b4cfd70bc29b2860aaebec30e9cf7f52393b3c6e3b1c305afa6",
+   "signer": "0x154a452b0755EE812014C1405B15D905BA06f9c7",
+   "status": "FINALIZED",
+   "block": null,
+   "leader_execution_result": null,
+   "validator_votes": {
+    "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "idle",
+    "0xCe0B66448435cA53665C954705Abd753515594Cf": "agree",
+    "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "agree",
+    "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "agree",
+    "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "idle"
+   },
+   "validator_results": [
+    ".idle",
+    ".>.match_close_epoch....5.match_id$cs2f.ok..protest_deadline_epoch....5.status$OPEN.submission_close_epoch....5.verification_timeout_epoch....5"
+   ],
+   "validators": [
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": ".>.match_close_epoch....5.match_id$cs2f.ok..protest_deadline_epoch....5.status$OPEN.submission_close_epoch....5.verification_timeout_epoch....5"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": ".>.match_close_epoch....5.match_id$cs2f.ok..protest_deadline_epoch....5.status$OPEN.submission_close_epoch....5.verification_timeout_epoch....5"
+    }
+   ],
+   "waited_ms": 33173,
+   "result": null,
+   "explorer": {
+    "explorer_status": "FINALIZED",
+    "explorer_block": null,
+    "leader_execution_result": null,
+    "votes": {
+     "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "idle",
+     "0xCe0B66448435cA53665C954705Abd753515594Cf": "agree",
+     "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "agree",
+     "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "agree",
+     "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "idle"
+    },
+    "validators": [
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".>.match_close_epoch....5.match_id$cs2f.ok..protest_deadline_epoch....5.status$OPEN.submission_close_epoch....5.verification_timeout_epoch....5"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".>.match_close_epoch....5.match_id$cs2f.ok..protest_deadline_epoch....5.status$OPEN.submission_close_epoch....5.verification_timeout_epoch....5"
+     }
+    ],
+    "distinct_results": [
+     ".idle",
+     ".>.match_close_epoch....5.match_id$cs2f.ok..protest_deadline_epoch....5.status$OPEN.submission_close_epoch....5.verification_timeout_epoch....5"
+    ]
+   }
+  },
+  {
+   "label": "register_valf",
+   "functionName": "register_tournament_payable",
+   "args": [
+    "valf",
+    "Valorant Sovereign Cup",
+    "Valorant",
+    "2000000000000000000",
+    "10000000000000000",
+    "10000000000000000",
+    "https://raw.githubusercontent.com/richeroveis/arena-veritas/main/docs/evidence/valorant-sovereign-telemetry.html",
+    "https://raw.githubusercontent.com/richeroveis/arena-veritas/main/docs/evidence/av-rulebook.html",
+    "1200",
+    "300",
+    "900",
+    "3600",
+    "0xfa502b70aca68c3a540302ba2115f3579c4cacdc",
+    "0x38963bb05305cc22f357dc87ef287e6f132941a5"
+   ],
+   "value": "0",
+   "hash": "0x018c7e46219031c8d80650be34b75de3fa24bf17bb26e4d4265120191785e40b",
+   "signer": "0x154a452b0755EE812014C1405B15D905BA06f9c7",
+   "status": "FINALIZED",
+   "block": null,
+   "leader_execution_result": null,
+   "validator_votes": {
+    "0x045291B293B9D68969c18B6637A8258038cf787A": "idle",
+    "0x336458747913FE397be82c4F0926ACeB3ab13618": "agree",
+    "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "idle",
+    "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "agree",
+    "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "agree"
+   },
+   "validator_results": [
+    ".>.match_close_epoch....5.match_id$valf.ok..protest_deadline_epoch....5.status$OPEN.submission_close_epoch....5.verification_timeout_epoch....5",
+    ".idle"
+   ],
+   "validators": [
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": ".>.match_close_epoch....5.match_id$valf.ok..protest_deadline_epoch....5.status$OPEN.submission_close_epoch....5.verification_timeout_epoch....5"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": ".>.match_close_epoch....5.match_id$valf.ok..protest_deadline_epoch....5.status$OPEN.submission_close_epoch....5.verification_timeout_epoch....5"
+    },
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    }
+   ],
+   "waited_ms": 33628,
+   "result": null,
+   "explorer": {
+    "explorer_status": "FINALIZED",
+    "explorer_block": null,
+    "leader_execution_result": null,
+    "votes": {
+     "0x045291B293B9D68969c18B6637A8258038cf787A": "idle",
+     "0x336458747913FE397be82c4F0926ACeB3ab13618": "agree",
+     "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "idle",
+     "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "agree",
+     "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "agree"
+    },
+    "validators": [
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".>.match_close_epoch....5.match_id$valf.ok..protest_deadline_epoch....5.status$OPEN.submission_close_epoch....5.verification_timeout_epoch....5"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".>.match_close_epoch....5.match_id$valf.ok..protest_deadline_epoch....5.status$OPEN.submission_close_epoch....5.verification_timeout_epoch....5"
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     }
+    ],
+    "distinct_results": [
+     ".>.match_close_epoch....5.match_id$valf.ok..protest_deadline_epoch....5.status$OPEN.submission_close_epoch....5.verification_timeout_epoch....5",
+     ".idle"
+    ]
+   }
+  },
+  {
+   "label": "register_dotaf",
+   "functionName": "register_tournament_payable",
+   "args": [
+    "dotaf",
+    "Dota 2 Saigon Invitational",
+    "Dota2",
+    "2000000000000000000",
+    "10000000000000000",
+    "10000000000000000",
+    "https://raw.githubusercontent.com/richeroveis/arena-veritas/main/docs/evidence/dota-saigon-telemetry.html",
+    "https://raw.githubusercontent.com/richeroveis/arena-veritas/main/docs/evidence/av-rulebook.html",
+    "1200",
+    "300",
+    "900",
+    "3600",
+    "0xfa502b70aca68c3a540302ba2115f3579c4cacdc",
+    "0x304f6bb2e22c7c227afc4a78f26ae5099649b1b0"
+   ],
+   "value": "0",
+   "hash": "0xbf5ffceffe4e1abd1440d8bc17a241e5b81f44d6778552e4eb2334b7f6ffbd1e",
+   "signer": "0x154a452b0755EE812014C1405B15D905BA06f9c7",
+   "status": "FINALIZED",
+   "block": null,
+   "leader_execution_result": null,
+   "validator_votes": {
+    "0x336458747913FE397be82c4F0926ACeB3ab13618": "agree",
+    "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "agree",
+    "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "idle",
+    "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "idle",
+    "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "agree"
+   },
+   "validator_results": [
+    ".>.match_close_epoch....5.match_id,dotaf.ok..protest_deadline_epoch...5.status$OPEN.submission_close_epoch....5.verification_timeout_epoch...5",
+    ".idle"
+   ],
+   "validators": [
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": ".>.match_close_epoch....5.match_id,dotaf.ok..protest_deadline_epoch...5.status$OPEN.submission_close_epoch....5.verification_timeout_epoch...5"
+    },
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": ".>.match_close_epoch....5.match_id,dotaf.ok..protest_deadline_epoch...5.status$OPEN.submission_close_epoch....5.verification_timeout_epoch...5"
+    }
+   ],
+   "waited_ms": 40872,
+   "result": null,
+   "explorer": {
+    "explorer_status": "FINALIZED",
+    "explorer_block": null,
+    "leader_execution_result": null,
+    "votes": {
+     "0x336458747913FE397be82c4F0926ACeB3ab13618": "agree",
+     "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "agree",
+     "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "idle",
+     "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "idle",
+     "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "agree"
+    },
+    "validators": [
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".>.match_close_epoch....5.match_id,dotaf.ok..protest_deadline_epoch...5.status$OPEN.submission_close_epoch....5.verification_timeout_epoch...5"
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".>.match_close_epoch....5.match_id,dotaf.ok..protest_deadline_epoch...5.status$OPEN.submission_close_epoch....5.verification_timeout_epoch...5"
+     }
+    ],
+    "distinct_results": [
+     ".>.match_close_epoch....5.match_id,dotaf.ok..protest_deadline_epoch...5.status$OPEN.submission_close_epoch....5.verification_timeout_epoch...5",
+     ".idle"
+    ]
+   }
+  },
+  {
+   "label": "register_eldenf",
+   "functionName": "register_tournament_payable",
+   "args": [
+    "eldenf",
+    "Elden Ring Any% Speedrun WR Verification",
+    "EldenRing",
+    "2000000000000000000",
+    "10000000000000000",
+    "10000000000000000",
+    "https://raw.githubusercontent.com/richeroveis/arena-veritas/main/docs/evidence/elden-ring-anypercent-telemetry.html",
+    "https://raw.githubusercontent.com/richeroveis/arena-veritas/main/docs/evidence/av-rulebook.html",
+    "1200",
+    "300",
+    "900",
+    "3600",
+    "0xfa502b70aca68c3a540302ba2115f3579c4cacdc",
+    "0x38963bb05305cc22f357dc87ef287e6f132941a5"
+   ],
+   "value": "0",
+   "hash": "0xdbd2ebd00b2be632bed38c8984ddb9f38f302f71e7fa93ace838ac30e42a3f98",
+   "signer": "0x154a452b0755EE812014C1405B15D905BA06f9c7",
+   "status": "FINALIZED",
+   "block": null,
+   "leader_execution_result": null,
+   "validator_votes": {
+    "0x045291B293B9D68969c18B6637A8258038cf787A": "agree",
+    "0x336458747913FE397be82c4F0926ACeB3ab13618": "agree",
+    "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "agree",
+    "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "idle",
+    "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "idle"
+   },
+   "validator_results": [
+    ".>.match_close_epoch....5.match_id4eldenf.ok..protest_deadline_epoch....5.status$OPEN.submission_close_epoch....5.verification_timeout_epoch....5",
+    ".idle"
+   ],
+   "validators": [
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": ".>.match_close_epoch....5.match_id4eldenf.ok..protest_deadline_epoch....5.status$OPEN.submission_close_epoch....5.verification_timeout_epoch....5"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": ".>.match_close_epoch....5.match_id4eldenf.ok..protest_deadline_epoch....5.status$OPEN.submission_close_epoch....5.verification_timeout_epoch....5"
+    },
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    }
+   ],
+   "waited_ms": 40966,
+   "result": null,
+   "explorer": {
+    "explorer_status": "FINALIZED",
+    "explorer_block": null,
+    "leader_execution_result": null,
+    "votes": {
+     "0x045291B293B9D68969c18B6637A8258038cf787A": "agree",
+     "0x336458747913FE397be82c4F0926ACeB3ab13618": "agree",
+     "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "agree",
+     "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "idle",
+     "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "idle"
+    },
+    "validators": [
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".>.match_close_epoch....5.match_id4eldenf.ok..protest_deadline_epoch....5.status$OPEN.submission_close_epoch....5.verification_timeout_epoch....5"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".>.match_close_epoch....5.match_id4eldenf.ok..protest_deadline_epoch....5.status$OPEN.submission_close_epoch....5.verification_timeout_epoch....5"
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     }
+    ],
+    "distinct_results": [
+     ".>.match_close_epoch....5.match_id4eldenf.ok..protest_deadline_epoch....5.status$OPEN.submission_close_epoch....5.verification_timeout_epoch....5",
+     ".idle"
+    ]
+   }
+  },
+  {
+   "label": "bond_cs2_a",
+   "functionName": "post_competitor_bond_payable",
+   "args": [
+    "cs2f"
+   ],
+   "value": "10000000000000000",
+   "hash": "0xf414832388a631f63d0a8dba60f53bcde9646e6b1dc0e296ce57f5202cf2e60c",
+   "signer": "0xFa502b70Aca68C3a540302ba2115F3579C4cacDc",
+   "status": "FINALIZED",
+   "block": null,
+   "leader_execution_result": null,
+   "validator_votes": {
+    "0x007d6451555Df7765c707284F844137927aE4e5E": "agree",
+    "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "idle",
+    "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "agree",
+    "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "idle",
+    "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "agree"
+   },
+   "validator_results": [
+    "...bond_locked_wei.......ok..slotTFINALIST_A.status$OPEN.surplus_refunded_wei.",
+    ".idle"
+   ],
+   "validators": [
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": "...bond_locked_wei.......ok..slotTFINALIST_A.status$OPEN.surplus_refunded_wei."
+    },
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": "...bond_locked_wei.......ok..slotTFINALIST_A.status$OPEN.surplus_refunded_wei."
+    }
+   ],
+   "waited_ms": 33262,
+   "result": null,
+   "explorer": {
+    "explorer_status": "FINALIZED",
+    "explorer_block": null,
+    "leader_execution_result": null,
+    "votes": {
+     "0x007d6451555Df7765c707284F844137927aE4e5E": "agree",
+     "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "idle",
+     "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "agree",
+     "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "idle",
+     "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "agree"
+    },
+    "validators": [
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": "...bond_locked_wei.......ok..slotTFINALIST_A.status$OPEN.surplus_refunded_wei."
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": "...bond_locked_wei.......ok..slotTFINALIST_A.status$OPEN.surplus_refunded_wei."
+     }
+    ],
+    "distinct_results": [
+     "...bond_locked_wei.......ok..slotTFINALIST_A.status$OPEN.surplus_refunded_wei.",
+     ".idle"
+    ]
+   }
+  },
+  {
+   "label": "bond_cs2_b",
+   "functionName": "post_competitor_bond_payable",
+   "args": [
+    "cs2f"
+   ],
+   "value": "10000000000000000",
+   "hash": "0x79ffbfdd143da2006525cfc9ce581a7cf9a84ea7e3d2f4dd039e19ca3e956463",
+   "signer": "0x38963bB05305cC22f357Dc87ef287e6f132941A5",
+   "status": "FINALIZED",
+   "block": null,
+   "leader_execution_result": null,
+   "validator_votes": {
+    "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "agree",
+    "0x336458747913FE397be82c4F0926ACeB3ab13618": "idle",
+    "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "idle",
+    "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "agree",
+    "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "agree"
+   },
+   "validator_results": [
+    "...bond_locked_wei.......ok..slotTFINALIST_B.status4ACTIVE.surplus_refunded_wei.",
+    ".idle"
+   ],
+   "validators": [
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": "...bond_locked_wei.......ok..slotTFINALIST_B.status4ACTIVE.surplus_refunded_wei."
+    },
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": "...bond_locked_wei.......ok..slotTFINALIST_B.status4ACTIVE.surplus_refunded_wei."
+    },
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    }
+   ],
+   "waited_ms": 34005,
+   "result": null,
+   "explorer": {
+    "explorer_status": "FINALIZED",
+    "explorer_block": null,
+    "leader_execution_result": null,
+    "votes": {
+     "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "agree",
+     "0x336458747913FE397be82c4F0926ACeB3ab13618": "idle",
+     "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "idle",
+     "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "agree",
+     "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "agree"
+    },
+    "validators": [
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": "...bond_locked_wei.......ok..slotTFINALIST_B.status4ACTIVE.surplus_refunded_wei."
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": "...bond_locked_wei.......ok..slotTFINALIST_B.status4ACTIVE.surplus_refunded_wei."
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     }
+    ],
+    "distinct_results": [
+     "...bond_locked_wei.......ok..slotTFINALIST_B.status4ACTIVE.surplus_refunded_wei.",
+     ".idle"
+    ]
+   }
+  },
+  {
+   "label": "bond_val_b",
+   "functionName": "post_competitor_bond_payable",
+   "args": [
+    "valf"
+   ],
+   "value": "10000000000000000",
+   "hash": "0xf7dd7cadee2d54326162c260d27e16333decfb8329340c3ad45b41806af95443",
+   "signer": "0x38963bB05305cC22f357Dc87ef287e6f132941A5",
+   "status": "FINALIZED",
+   "block": null,
+   "leader_execution_result": null,
+   "validator_votes": {
+    "0x045291B293B9D68969c18B6637A8258038cf787A": "idle",
+    "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "idle",
+    "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+    "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "agree",
+    "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "agree"
+   },
+   "validator_results": [
+    ".idle",
+    "...bond_locked_wei.......ok..slotTFINALIST_B.status4ACTIVE.surplus_refunded_wei."
+   ],
+   "validators": [
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": "...bond_locked_wei.......ok..slotTFINALIST_B.status4ACTIVE.surplus_refunded_wei."
+    },
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": "...bond_locked_wei.......ok..slotTFINALIST_B.status4ACTIVE.surplus_refunded_wei."
+    }
+   ],
+   "waited_ms": 40055,
+   "result": null,
+   "explorer": {
+    "explorer_status": "FINALIZED",
+    "explorer_block": null,
+    "leader_execution_result": null,
+    "votes": {
+     "0x045291B293B9D68969c18B6637A8258038cf787A": "idle",
+     "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "idle",
+     "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+     "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "agree",
+     "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "agree"
+    },
+    "validators": [
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": "...bond_locked_wei.......ok..slotTFINALIST_B.status4ACTIVE.surplus_refunded_wei."
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": "...bond_locked_wei.......ok..slotTFINALIST_B.status4ACTIVE.surplus_refunded_wei."
+     }
+    ],
+    "distinct_results": [
+     ".idle",
+     "...bond_locked_wei.......ok..slotTFINALIST_B.status4ACTIVE.surplus_refunded_wei."
+    ]
+   }
+  },
+  {
+   "label": "bond_val_a",
+   "functionName": "post_competitor_bond_payable",
+   "args": [
+    "valf"
+   ],
+   "value": "20000000000000000",
+   "hash": "0x90b3d187db5451510f56f4e4886eb0c504374a0e8af72b1ec998a41acaaaae31",
+   "signer": "0xFa502b70Aca68C3a540302ba2115F3579C4cacDc",
+   "status": "FINALIZED",
+   "block": null,
+   "leader_execution_result": null,
+   "validator_votes": {
+    "0x045291B293B9D68969c18B6637A8258038cf787A": "idle",
+    "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "idle",
+    "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "agree",
+    "0xCe0B66448435cA53665C954705Abd753515594Cf": "agree",
+    "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "agree"
+   },
+   "validator_results": [
+    ".idle",
+    "...bond_locked_wei.......ok..slotTFINALIST_A.status$OPEN.surplus_refunded_wei......"
+   ],
+   "validators": [
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": "...bond_locked_wei.......ok..slotTFINALIST_A.status$OPEN.surplus_refunded_wei......"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": "...bond_locked_wei.......ok..slotTFINALIST_A.status$OPEN.surplus_refunded_wei......"
+    }
+   ],
+   "waited_ms": 40163,
+   "result": null,
+   "explorer": {
+    "explorer_http": 503
+   }
+  },
+  {
+   "label": "bond_elden_a",
+   "functionName": "post_competitor_bond_payable",
+   "args": [
+    "eldenf"
+   ],
+   "value": "10000000000000000",
+   "hash": "0x07e873da71bb951d7fc33071ff21bb4451dbd9f4f218a8b8bc6943468821db48",
+   "signer": "0xFa502b70Aca68C3a540302ba2115F3579C4cacDc",
+   "status": "FINALIZED",
+   "block": null,
+   "leader_execution_result": null,
+   "validator_votes": {
+    "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "idle",
+    "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "idle",
+    "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "agree",
+    "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "agree",
+    "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "agree"
+   },
+   "validator_results": [
+    ".idle",
+    "...bond_locked_wei.......ok..slotTFINALIST_A.status$OPEN.surplus_refunded_wei."
+   ],
+   "validators": [
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": "...bond_locked_wei.......ok..slotTFINALIST_A.status$OPEN.surplus_refunded_wei."
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": "...bond_locked_wei.......ok..slotTFINALIST_A.status$OPEN.surplus_refunded_wei."
+    }
+   ],
+   "waited_ms": 46819,
+   "result": null,
+   "explorer": {
+    "explorer_status": "FINALIZED",
+    "explorer_block": null,
+    "leader_execution_result": null,
+    "votes": {
+     "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "idle",
+     "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "idle",
+     "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "agree",
+     "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "agree",
+     "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "agree"
+    },
+    "validators": [
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": "...bond_locked_wei.......ok..slotTFINALIST_A.status$OPEN.surplus_refunded_wei."
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": "...bond_locked_wei.......ok..slotTFINALIST_A.status$OPEN.surplus_refunded_wei."
+     }
+    ],
+    "distinct_results": [
+     ".idle",
+     "...bond_locked_wei.......ok..slotTFINALIST_A.status$OPEN.surplus_refunded_wei."
+    ]
+   }
+  },
+  {
+   "label": "bond_dota_a",
+   "functionName": "post_competitor_bond_payable",
+   "args": [
+    "dotaf"
+   ],
+   "value": "10000000000000000",
+   "hash": "0xbabd4bea40df76c3b4955dc2b1dbfa8f139a721982296ed3c06779b6dee6a6af",
+   "signer": "0xFa502b70Aca68C3a540302ba2115F3579C4cacDc",
+   "status": "FINALIZED",
+   "block": null,
+   "leader_execution_result": null,
+   "validator_votes": {
+    "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "idle",
+    "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "agree",
+    "0x5e84e17266a193077728229751aC8A1dD24be146": "idle",
+    "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "agree",
+    "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "agree"
+   },
+   "validator_results": [
+    "...bond_locked_wei.......ok..slotTFINALIST_A.status$OPEN.surplus_refunded_wei.",
+    ".idle"
+   ],
+   "validators": [
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": "...bond_locked_wei.......ok..slotTFINALIST_A.status$OPEN.surplus_refunded_wei."
+    },
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": "...bond_locked_wei.......ok..slotTFINALIST_A.status$OPEN.surplus_refunded_wei."
+    },
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    }
+   ],
+   "waited_ms": 52965,
+   "result": null,
+   "explorer": {
+    "explorer_status": "FINALIZED",
+    "explorer_block": null,
+    "leader_execution_result": null,
+    "votes": {
+     "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "idle",
+     "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "agree",
+     "0x5e84e17266a193077728229751aC8A1dD24be146": "idle",
+     "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "agree",
+     "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "agree"
+    },
+    "validators": [
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": "...bond_locked_wei.......ok..slotTFINALIST_A.status$OPEN.surplus_refunded_wei."
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": "...bond_locked_wei.......ok..slotTFINALIST_A.status$OPEN.surplus_refunded_wei."
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     }
+    ],
+    "distinct_results": [
+     "...bond_locked_wei.......ok..slotTFINALIST_A.status$OPEN.surplus_refunded_wei.",
+     ".idle"
+    ]
+   }
+  },
+  {
+   "label": "bond_elden_b",
+   "functionName": "post_competitor_bond_payable",
+   "args": [
+    "eldenf"
+   ],
+   "value": "10000000000000000",
+   "hash": "0x0e08988d5652d675db8275ef0e9da11afec44f76a056125cf5b2de8f363b9d36",
+   "signer": "0x38963bB05305cC22f357Dc87ef287e6f132941A5",
+   "status": "FINALIZED",
+   "block": null,
+   "leader_execution_result": null,
+   "validator_votes": {
+    "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "agree",
+    "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "idle",
+    "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "idle",
+    "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "agree",
+    "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "agree"
+   },
+   "validator_results": [
+    ".idle",
+    "...bond_locked_wei.......ok..slotTFINALIST_B.status4ACTIVE.surplus_refunded_wei."
+   ],
+   "validators": [
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": "...bond_locked_wei.......ok..slotTFINALIST_B.status4ACTIVE.surplus_refunded_wei."
+    },
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": "...bond_locked_wei.......ok..slotTFINALIST_B.status4ACTIVE.surplus_refunded_wei."
+    }
+   ],
+   "waited_ms": 53509,
+   "result": null,
+   "explorer": {
+    "explorer_status": "FINALIZED",
+    "explorer_block": null,
+    "leader_execution_result": null,
+    "votes": {
+     "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "agree",
+     "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "idle",
+     "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "idle",
+     "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "agree",
+     "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "agree"
+    },
+    "validators": [
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": "...bond_locked_wei.......ok..slotTFINALIST_B.status4ACTIVE.surplus_refunded_wei."
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": "...bond_locked_wei.......ok..slotTFINALIST_B.status4ACTIVE.surplus_refunded_wei."
+     }
+    ],
+    "distinct_results": [
+     ".idle",
+     "...bond_locked_wei.......ok..slotTFINALIST_B.status4ACTIVE.surplus_refunded_wei."
+    ]
+   }
+  },
+  {
+   "label": "submit_cs2_a",
+   "functionName": "submit_tournament_telemetry",
+   "args": [
+    "cs2f",
+    "grand final 16-14 tick stream with no pause anomalies"
+   ],
+   "value": "0",
+   "hash": "0xcd218416d12a22bc9cec737d2b241287a0dca82540e4dd7e821a3796298cf227",
+   "signer": "0xFa502b70Aca68C3a540302ba2115F3579C4cacDc",
+   "status": "FINALIZED",
+   "block": null,
+   "leader_execution_result": null,
+   "validator_votes": {
+    "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "agree",
+    "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "idle",
+    "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "agree",
+    "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "agree",
+    "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "idle"
+   },
+   "validator_results": [
+    ".idle",
+    "...match_id$cs2f.ok..slotTFINALIST_A.telemetry_submitted_a..telemetry_submitted_b."
+   ],
+   "validators": [
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": "...match_id$cs2f.ok..slotTFINALIST_A.telemetry_submitted_a..telemetry_submitted_b."
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": "...match_id$cs2f.ok..slotTFINALIST_A.telemetry_submitted_a..telemetry_submitted_b."
+    },
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    }
+   ],
+   "waited_ms": 32936,
+   "result": null,
+   "explorer": {
+    "explorer_status": "FINALIZED",
+    "explorer_block": null,
+    "leader_execution_result": null,
+    "votes": {
+     "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "agree",
+     "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "idle",
+     "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "agree",
+     "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "agree",
+     "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "idle"
+    },
+    "validators": [
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": "...match_id$cs2f.ok..slotTFINALIST_A.telemetry_submitted_a..telemetry_submitted_b."
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": "...match_id$cs2f.ok..slotTFINALIST_A.telemetry_submitted_a..telemetry_submitted_b."
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     }
+    ],
+    "distinct_results": [
+     ".idle",
+     "...match_id$cs2f.ok..slotTFINALIST_A.telemetry_submitted_a..telemetry_submitted_b."
+    ]
+   }
+  },
+  {
+   "label": "submit_elden_b",
+   "functionName": "submit_tournament_telemetry",
+   "args": [
+    "eldenf",
+    "WR holder split file and input log"
+   ],
+   "value": "0",
+   "hash": "0x2bbd6f03f68641f609099389d8fceaf4c9dd475c9d9c5f1261978ae213b52828",
+   "signer": "0x38963bB05305cC22f357Dc87ef287e6f132941A5",
+   "status": "FINALIZED",
+   "block": null,
+   "leader_execution_result": null,
+   "validator_votes": {
+    "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "idle",
+    "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "agree",
+    "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "idle",
+    "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "agree",
+    "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "agree"
+   },
+   "validator_results": [
+    ".idle",
+    "...match_id4eldenf.ok..slotTFINALIST_B.telemetry_submitted_a..telemetry_submitted_b."
+   ],
+   "validators": [
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": "...match_id4eldenf.ok..slotTFINALIST_B.telemetry_submitted_a..telemetry_submitted_b."
+    },
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": "...match_id4eldenf.ok..slotTFINALIST_B.telemetry_submitted_a..telemetry_submitted_b."
+    }
+   ],
+   "waited_ms": 40276,
+   "result": null,
+   "explorer": {
+    "explorer_status": "FINALIZED",
+    "explorer_block": null,
+    "leader_execution_result": null,
+    "votes": {
+     "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "idle",
+     "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "agree",
+     "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "idle",
+     "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "agree",
+     "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "agree"
+    },
+    "validators": [
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": "...match_id4eldenf.ok..slotTFINALIST_B.telemetry_submitted_a..telemetry_submitted_b."
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": "...match_id4eldenf.ok..slotTFINALIST_B.telemetry_submitted_a..telemetry_submitted_b."
+     }
+    ],
+    "distinct_results": [
+     ".idle",
+     "...match_id4eldenf.ok..slotTFINALIST_B.telemetry_submitted_a..telemetry_submitted_b."
+    ]
+   }
+  },
+  {
+   "label": "submit_val_a",
+   "functionName": "submit_tournament_telemetry",
+   "args": [
+    "valf",
+    "map decider server rollback at round 14"
+   ],
+   "value": "0",
+   "hash": "0x9671e7f15d786b303ef86d43f5eac3d85334e21e20a7fcc4fe5b06dad8a3579a",
+   "signer": "0xFa502b70Aca68C3a540302ba2115F3579C4cacDc",
+   "status": "FINALIZED",
+   "block": null,
+   "leader_execution_result": null,
+   "validator_votes": {
+    "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "agree",
+    "0x336458747913FE397be82c4F0926ACeB3ab13618": "idle",
+    "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "agree",
+    "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "idle",
+    "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "agree"
+   },
+   "validator_results": [
+    "...match_id$valf.ok..slotTFINALIST_A.telemetry_submitted_a..telemetry_submitted_b.",
+    ".idle"
+   ],
+   "validators": [
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": "...match_id$valf.ok..slotTFINALIST_A.telemetry_submitted_a..telemetry_submitted_b."
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": "...match_id$valf.ok..slotTFINALIST_A.telemetry_submitted_a..telemetry_submitted_b."
+    },
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    }
+   ],
+   "waited_ms": 40322,
+   "result": null,
+   "explorer": {
+    "explorer_status": "FINALIZED",
+    "explorer_block": null,
+    "leader_execution_result": null,
+    "votes": {
+     "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "agree",
+     "0x336458747913FE397be82c4F0926ACeB3ab13618": "idle",
+     "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "agree",
+     "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "idle",
+     "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "agree"
+    },
+    "validators": [
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": "...match_id$valf.ok..slotTFINALIST_A.telemetry_submitted_a..telemetry_submitted_b."
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": "...match_id$valf.ok..slotTFINALIST_A.telemetry_submitted_a..telemetry_submitted_b."
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     }
+    ],
+    "distinct_results": [
+     "...match_id$valf.ok..slotTFINALIST_A.telemetry_submitted_a..telemetry_submitted_b.",
+     ".idle"
+    ]
+   }
+  },
+  {
+   "label": "softfail_bystander",
+   "functionName": "post_competitor_bond_payable",
+   "args": [
+    "cs2f"
+   ],
+   "value": "10000000000000000",
+   "hash": "0xda9f3e1e322a5a54ce468af3072e93c195994c355baa300567f0f051023d49f1",
+   "signer": "0x304F6Bb2E22C7C227AFC4A78F26ae5099649B1b0",
+   "status": "FINALIZED",
+   "block": null,
+   "leader_execution_result": null,
+   "validator_votes": {
+    "0x007d6451555Df7765c707284F844137927aE4e5E": "agree",
+    "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "agree",
+    "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "idle",
+    "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "idle",
+    "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "agree"
+   },
+   "validator_results": [
+    ".idle",
+    "...ok..refundable_balance.......refunded_wei.......rejected_reason..caller is not a listed finalist.soft_fail."
+   ],
+   "validators": [
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": "...ok..refundable_balance.......refunded_wei.......rejected_reason..caller is not a listed finalist.soft_fail."
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": "...ok..refundable_balance.......refunded_wei.......rejected_reason..caller is not a listed finalist.soft_fail."
+    }
+   ],
+   "waited_ms": 39793,
+   "result": null,
+   "explorer": {
+    "explorer_status": "FINALIZED",
+    "explorer_block": null,
+    "leader_execution_result": null,
+    "votes": {
+     "0x007d6451555Df7765c707284F844137927aE4e5E": "agree",
+     "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "agree",
+     "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "idle",
+     "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "idle",
+     "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "agree"
+    },
+    "validators": [
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": "...ok..refundable_balance.......refunded_wei.......rejected_reason..caller is not a listed finalist.soft_fail."
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": "...ok..refundable_balance.......refunded_wei.......rejected_reason..caller is not a listed finalist.soft_fail."
+     }
+    ],
+    "distinct_results": [
+     ".idle",
+     "...ok..refundable_balance.......refunded_wei.......rejected_reason..caller is not a listed finalist.soft_fail."
+    ]
+   }
+  },
+  {
+   "label": "verify_cs2",
+   "functionName": "verify_match_telemetry",
+   "args": [
+    "cs2f"
+   ],
+   "value": "0",
+   "hash": "0x9111416c1cdacd9a5fbdbec8e30d9f62e78eae4b2d308af06d76b693e5798949",
+   "signer": "0x154a452b0755EE812014C1405B15D905BA06f9c7",
+   "status": "FINALIZED",
+   "block": null,
+   "leader_execution_result": null,
+   "validator_votes": {
+    "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "idle",
+    "0x336458747913FE397be82c4F0926ACeB3ab13618": "disagree",
+    "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "agree",
+    "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "agree",
+    "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "agree"
+   },
+   "validator_results": [
+    ".[LLM_ERROR] bad compliant_slot",
+    ".idle"
+   ],
+   "validators": [
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": ".[LLM_ERROR] bad compliant_slot"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": ".[LLM_ERROR] bad compliant_slot"
+    },
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "disagree",
+     "result": ".[LLM_ERROR] bad compliant_slot"
+    }
+   ],
+   "waited_ms": 90877,
+   "result": null,
+   "explorer": {
+    "explorer_status": "FINALIZED",
+    "explorer_block": null,
+    "leader_execution_result": null,
+    "votes": {
+     "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "idle",
+     "0x336458747913FE397be82c4F0926ACeB3ab13618": "disagree",
+     "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "agree",
+     "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "agree",
+     "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "agree"
+    },
+    "validators": [
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".[LLM_ERROR] bad compliant_slot"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".[LLM_ERROR] bad compliant_slot"
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "disagree",
+      "result": ".[LLM_ERROR] bad compliant_slot"
+     }
+    ],
+    "distinct_results": [
+     ".[LLM_ERROR] bad compliant_slot",
+     ".idle"
+    ]
+   }
+  },
+  {
+   "label": "protest_elden",
+   "functionName": "file_anti_cheat_protest_payable",
+   "args": [
+    "eldenf",
+    "FINALIST_A",
+    "input tick automation and frame splice detected in the WR split file"
+   ],
+   "value": "10000000000000000",
+   "hash": "0xf346583777f2d1da9e4c800e8320b8131d3ee60c848e52d27674ab6dbb4b572d",
+   "signer": "0x38963bB05305cC22f357Dc87ef287e6f132941A5",
+   "status": "FINALIZED",
+   "block": null,
+   "leader_execution_result": null,
+   "validator_votes": {
+    "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "agree",
+    "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "idle",
+    "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+    "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "idle",
+    "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "agree"
+   },
+   "validator_results": [
+    "...ok..protest_bond_locked_wei.......protest_deadline_epoch....5.protest_target_slotTFINALIST_A.surplus_refunded_wei.",
+    ".idle"
+   ],
+   "validators": [
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": "...ok..protest_bond_locked_wei.......protest_deadline_epoch....5.protest_target_slotTFINALIST_A.surplus_refunded_wei."
+    },
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": "...ok..protest_bond_locked_wei.......protest_deadline_epoch....5.protest_target_slotTFINALIST_A.surplus_refunded_wei."
+    },
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    }
+   ],
+   "waited_ms": 92640,
+   "result": null,
+   "explorer": {
+    "explorer_status": "FINALIZED",
+    "explorer_block": null,
+    "leader_execution_result": null,
+    "votes": {
+     "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "agree",
+     "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "idle",
+     "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+     "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "idle",
+     "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "agree"
+    },
+    "validators": [
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": "...ok..protest_bond_locked_wei.......protest_deadline_epoch....5.protest_target_slotTFINALIST_A.surplus_refunded_wei."
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": "...ok..protest_bond_locked_wei.......protest_deadline_epoch....5.protest_target_slotTFINALIST_A.surplus_refunded_wei."
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     }
+    ],
+    "distinct_results": [
+     "...ok..protest_bond_locked_wei.......protest_deadline_epoch....5.protest_target_slotTFINALIST_A.surplus_refunded_wei.",
+     ".idle"
+    ]
+   }
+  },
+  {
+   "label": "verify_val",
+   "functionName": "verify_match_telemetry",
+   "args": [
+    "valf"
+   ],
+   "value": "0",
+   "hash": "0x892a1de288803cc4aaed838da2605f24618ac000d1ae4de63921b1d9a6b25a42",
+   "signer": "0x154a452b0755EE812014C1405B15D905BA06f9c7",
+   "status": "FINALIZED",
+   "block": null,
+   "leader_execution_result": null,
+   "validator_votes": {
+    "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "agree",
+    "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "agree",
+    "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "idle",
+    "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "agree",
+    "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "idle"
+   },
+   "validator_results": [
+    ".F.match_id$valf.ok..protest_deadline_epoch....5.quantized_anomaly_bps.. quantized_integrity_baseline_bps....statusDVERIFIED.verdict_band..SPLIT_DRAW_SETTLEMENT.verified_winner_slot$DRAW",
+    ".idle"
+   ],
+   "validators": [
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": ".F.match_id$valf.ok..protest_deadline_epoch....5.quantized_anomaly_bps.. quantized_integrity_baseline_bps....statusDVERIFIED.verdict_band..SPLIT_DRAW_SETTLEMENT.verified_winner_slot$DRAW"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": ".F.match_id$valf.ok..protest_deadline_epoch....5.quantized_anomaly_bps.. quantized_integrity_baseline_bps....statusDVERIFIED.verdict_band..SPLIT_DRAW_SETTLEMENT.verified_winner_slot$DRAW"
+    },
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    }
+   ],
+   "waited_ms": 63658722,
+   "result": null,
+   "explorer": {
+    "explorer_status": "FINALIZED",
+    "explorer_block": null,
+    "leader_execution_result": null,
+    "votes": {
+     "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "agree",
+     "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "agree",
+     "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "idle",
+     "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "agree",
+     "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "idle"
+    },
+    "validators": [
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".F.match_id$valf.ok..protest_deadline_epoch....5.quantized_anomaly_bps.. quantized_integrity_baseline_bps....statusDVERIFIED.verdict_band..SPLIT_DRAW_SETTLEMENT"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".F.match_id$valf.ok..protest_deadline_epoch....5.quantized_anomaly_bps.. quantized_integrity_baseline_bps....statusDVERIFIED.verdict_band..SPLIT_DRAW_SETTLEMENT"
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     }
+    ],
+    "distinct_results": [
+     ".F.match_id$valf.ok..protest_deadline_epoch....5.quantized_anomaly_bps.. quantized_integrity_baseline_bps....statusDVERIFIED.verdict_band..SPLIT_DRAW_SETTLEMENT",
+     ".idle"
+    ]
+   }
+  },
+  {
+   "label": "verify_elden",
+   "functionName": "verify_match_telemetry",
+   "args": [
+    "eldenf"
+   ],
+   "value": "0",
+   "hash": "0x06f990d9a45fc1b229ed3c1386233cc28abbdd29a087d1e5796b0c6c5e006a87",
+   "signer": "0x154a452b0755EE812014C1405B15D905BA06f9c7",
+   "status": "FINALIZED",
+   "block": null,
+   "leader_execution_result": null,
+   "validator_votes": {
+    "0x336458747913FE397be82c4F0926ACeB3ab13618": "agree",
+    "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "idle",
+    "0xCe0B66448435cA53665C954705Abd753515594Cf": "agree",
+    "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "idle",
+    "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "agree"
+   },
+   "validator_results": [
+    ".F.match_id4eldenf.ok..protest_deadline_epoch....5.quantized_anomaly_bps... quantized_integrity_baseline_bps....statusDVERIFIED.verdict_band..CHEAT_DISQUALIFICATION_SLASH.verified_winner_slotTFINALIST",
+    ".idle"
+   ],
+   "validators": [
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": ".F.match_id4eldenf.ok..protest_deadline_epoch....5.quantized_anomaly_bps... quantized_integrity_baseline_bps....statusDVERIFIED.verdict_band..CHEAT_DISQUALIFICATION_SLASH.verified_winner_slotTFINALIST"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": ".F.match_id4eldenf.ok..protest_deadline_epoch....5.quantized_anomaly_bps... quantized_integrity_baseline_bps....statusDVERIFIED.verdict_band..CHEAT_DISQUALIFICATION_SLASH.verified_winner_slotTFINALIST"
+    },
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    }
+   ],
+   "waited_ms": 63658826,
+   "result": null,
+   "explorer": {
+    "explorer_status": "FINALIZED",
+    "explorer_block": null,
+    "leader_execution_result": null,
+    "votes": {
+     "0x336458747913FE397be82c4F0926ACeB3ab13618": "agree",
+     "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "idle",
+     "0xCe0B66448435cA53665C954705Abd753515594Cf": "agree",
+     "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "idle",
+     "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "agree"
+    },
+    "validators": [
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".F.match_id4eldenf.ok..protest_deadline_epoch....5.quantized_anomaly_bps... quantized_integrity_baseline_bps....statusDVERIFIED.verdict_band..CHEAT_DISQUALIFICA"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".F.match_id4eldenf.ok..protest_deadline_epoch....5.quantized_anomaly_bps... quantized_integrity_baseline_bps....statusDVERIFIED.verdict_band..CHEAT_DISQUALIFICA"
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     }
+    ],
+    "distinct_results": [
+     ".F.match_id4eldenf.ok..protest_deadline_epoch....5.quantized_anomaly_bps... quantized_integrity_baseline_bps....statusDVERIFIED.verdict_band..CHEAT_DISQUALIFICA",
+     ".idle"
+    ]
+   }
+  },
+  {
+   "label": "void_dota",
+   "functionName": "mark_void_no_contest",
+   "args": [
+    "dotaf"
+   ],
+   "value": "0",
+   "hash": "0x3dc657bf16f3c2256e646671f06dbbff4c5a709592fb0f6dabcfb3568dfbba5f",
+   "signer": "0x154a452b0755EE812014C1405B15D905BA06f9c7",
+   "status": "FINALIZED",
+   "block": null,
+   "leader_execution_result": null,
+   "validator_votes": {
+    "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+    "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "idle",
+    "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "agree",
+    "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "agree",
+    "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "agree"
+   },
+   "validator_results": [
+    "...match_id,dotaf.ok..status$VOID",
+    ".idle"
+   ],
+   "validators": [
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": "...match_id,dotaf.ok..status$VOID"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": "...match_id,dotaf.ok..status$VOID"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": "...match_id,dotaf.ok..status$VOID"
+    },
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    }
+   ],
+   "waited_ms": 49918,
+   "result": null,
+   "explorer": {
+    "explorer_status": "FINALIZED",
+    "explorer_block": null,
+    "leader_execution_result": null,
+    "votes": {
+     "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+     "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "idle",
+     "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "agree",
+     "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "agree",
+     "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "agree"
+    },
+    "validators": [
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": "...match_id,dotaf.ok..status$VOID"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": "...match_id,dotaf.ok..status$VOID"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": "...match_id,dotaf.ok..status$VOID"
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     }
+    ],
+    "distinct_results": [
+     "...match_id,dotaf.ok..status$VOID",
+     ".idle"
+    ]
+   }
+  },
+  {
+   "label": "abandon_dota",
+   "functionName": "claim_abandoned_match_refund",
+   "args": [
+    "dotaf"
+   ],
+   "value": "0",
+   "hash": "0x97c3c27c460164fc3289c565af9624471ada22fbcd138146d7a246334db024b3",
+   "signer": "0x154a452b0755EE812014C1405B15D905BA06f9c7",
+   "status": "FINALIZED",
+   "block": null,
+   "leader_execution_result": null,
+   "validator_votes": {
+    "0x045291B293B9D68969c18B6637A8258038cf787A": "idle",
+    "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "agree",
+    "0x336458747913FE397be82c4F0926ACeB3ab13618": "agree",
+    "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "agree",
+    "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "agree"
+   },
+   "validator_results": [
+    ".idle",
+    ".&.match_id,dotaf.ok..organizer_prize_refunded_avt..........statusDREFUNDED"
+   ],
+   "validators": [
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": ".&.match_id,dotaf.ok..organizer_prize_refunded_avt..........statusDREFUNDED"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": ".&.match_id,dotaf.ok..organizer_prize_refunded_avt..........statusDREFUNDED"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": ".&.match_id,dotaf.ok..organizer_prize_refunded_avt..........statusDREFUNDED"
+    }
+   ],
+   "waited_ms": 37374,
+   "result": null,
+   "explorer": {
+    "explorer_status": "FINALIZED",
+    "explorer_block": null,
+    "leader_execution_result": null,
+    "votes": {
+     "0x045291B293B9D68969c18B6637A8258038cf787A": "idle",
+     "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "agree",
+     "0x336458747913FE397be82c4F0926ACeB3ab13618": "agree",
+     "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "agree",
+     "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "agree"
+    },
+    "validators": [
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".&.match_id,dotaf.ok..organizer_prize_refunded_avt..........statusDREFUNDED"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".&.match_id,dotaf.ok..organizer_prize_refunded_avt..........statusDREFUNDED"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".&.match_id,dotaf.ok..organizer_prize_refunded_avt..........statusDREFUNDED"
+     }
+    ],
+    "distinct_results": [
+     ".idle",
+     ".&.match_id,dotaf.ok..organizer_prize_refunded_avt..........statusDREFUNDED"
+    ]
+   }
+  },
+  {
+   "label": "claim_refundable_bystander",
+   "functionName": "claim_refundable_balance",
+   "args": [],
+   "value": "0",
+   "hash": "0x30b93ede1c47d81035a3961d96de3e28b52fd2b95c82c44f41b0cb372e98674a",
+   "signer": "0x304F6Bb2E22C7C227AFC4A78F26ae5099649B1b0",
+   "status": "FINALIZED",
+   "block": null,
+   "leader_execution_result": null,
+   "validator_votes": {
+    "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "idle",
+    "0x336458747913FE397be82c4F0926ACeB3ab13618": "agree",
+    "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "idle",
+    "0xCe0B66448435cA53665C954705Abd753515594Cf": "agree",
+    "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "agree"
+   },
+   "validator_results": [
+    "...ok..released_wei.......remaining_refundable.",
+    ".idle"
+   ],
+   "validators": [
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": "...ok..released_wei.......remaining_refundable."
+    },
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": "...ok..released_wei.......remaining_refundable."
+    },
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    }
+   ],
+   "waited_ms": 38725,
+   "result": null,
+   "explorer": {
+    "explorer_status": "FINALIZED",
+    "explorer_block": null,
+    "leader_execution_result": null,
+    "votes": {
+     "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "idle",
+     "0x336458747913FE397be82c4F0926ACeB3ab13618": "agree",
+     "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "idle",
+     "0xCe0B66448435cA53665C954705Abd753515594Cf": "agree",
+     "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "agree"
+    },
+    "validators": [
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": "...ok..released_wei.......remaining_refundable."
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": "...ok..released_wei.......remaining_refundable."
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     }
+    ],
+    "distinct_results": [
+     "...ok..released_wei.......remaining_refundable.",
+     ".idle"
+    ]
+   }
+  },
+  {
+   "label": "withdraw_refund_surplus",
+   "functionName": "withdraw_refund",
+   "args": [
+    "10000000000000000"
+   ],
+   "value": "0",
+   "hash": "0xe669b321c2124c895f5229af1af07ca2aeced8d0bf225d8eda9867411b148400",
+   "signer": "0xFa502b70Aca68C3a540302ba2115F3579C4cacDc",
+   "status": "FINALIZED",
+   "block": null,
+   "leader_execution_result": null,
+   "validator_votes": {
+    "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "agree",
+    "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "idle",
+    "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+    "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "agree",
+    "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "idle"
+   },
+   "validator_results": [
+    "...ok..released_wei.......remaining_refundable......",
+    ".idle"
+   ],
+   "validators": [
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": "...ok..released_wei.......remaining_refundable......"
+    },
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": "...ok..released_wei.......remaining_refundable......"
+    }
+   ],
+   "waited_ms": 32657,
+   "result": null,
+   "explorer": {
+    "explorer_status": "FINALIZED",
+    "explorer_block": null,
+    "leader_execution_result": null,
+    "votes": {
+     "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "agree",
+     "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "idle",
+     "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+     "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "agree",
+     "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "idle"
+    },
+    "validators": [
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": "...ok..released_wei.......remaining_refundable......"
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": "...ok..released_wei.......remaining_refundable......"
+     }
+    ],
+    "distinct_results": [
+     "...ok..released_wei.......remaining_refundable......",
+     ".idle"
+    ]
+   }
+  },
+  {
+   "label": "settle_cs2",
+   "functionName": "claim_tournament_settlement",
+   "args": [
+    "cs2f"
+   ],
+   "value": "0",
+   "hash": "0xaf62e3243cacb6bb2553b06bbd32a6caefc1f52e80248a3a022059f8bc0a0a9a",
+   "signer": "0x154a452b0755EE812014C1405B15D905BA06f9c7",
+   "status": "FINALIZED",
+   "block": null,
+   "leader_execution_result": null,
+   "validator_votes": {
+    "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "agree",
+    "0x336458747913FE397be82c4F0926ACeB3ab13618": "agree",
+    "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "idle",
+    "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "idle",
+    "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "agree"
+   },
+   "validator_results": [
+    ".idle",
+    ".[EXPECTED] bracket is not VERIFIED"
+   ],
+   "validators": [
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": ".[EXPECTED] bracket is not VERIFIED"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": ".[EXPECTED] bracket is not VERIFIED"
+    }
+   ],
+   "waited_ms": 35462,
+   "result": null,
+   "explorer": {
+    "explorer_status": "FINALIZED",
+    "explorer_block": null,
+    "leader_execution_result": null,
+    "votes": {
+     "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "agree",
+     "0x336458747913FE397be82c4F0926ACeB3ab13618": "agree",
+     "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "idle",
+     "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "idle",
+     "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "agree"
+    },
+    "validators": [
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".[EXPECTED] bracket is not VERIFIED"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".[EXPECTED] bracket is not VERIFIED"
+     }
+    ],
+    "distinct_results": [
+     ".idle",
+     ".[EXPECTED] bracket is not VERIFIED"
+    ]
+   }
+  },
+  {
+   "label": "settle_val",
+   "functionName": "claim_tournament_settlement",
+   "args": [
+    "valf"
+   ],
+   "value": "0",
+   "hash": "0x3c30f6e1be51094b90357eb31a60ca68ef5a714b7c9246cc63e962dfcf0389d5",
+   "signer": "0x154a452b0755EE812014C1405B15D905BA06f9c7",
+   "status": "FINALIZED",
+   "block": null,
+   "leader_execution_result": null,
+   "validator_votes": {
+    "0x336458747913FE397be82c4F0926ACeB3ab13618": "idle",
+    "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "agree",
+    "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "agree",
+    "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "agree",
+    "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "idle"
+   },
+   "validator_results": [
+    ".idle",
+    ".6.bond_slash_wei..champion_payout_avt......o.match_id$valf.ok..status<SETTLED.verdict_band..SPLIT_DRAW_SETTLEMENT"
+   ],
+   "validators": [
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": ".6.bond_slash_wei..champion_payout_avt......o.match_id$valf.ok..status<SETTLED.verdict_band..SPLIT_DRAW_SETTLEMENT"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": ".6.bond_slash_wei..champion_payout_avt......o.match_id$valf.ok..status<SETTLED.verdict_band..SPLIT_DRAW_SETTLEMENT"
+    }
+   ],
+   "waited_ms": 35726,
+   "result": null,
+   "explorer": {
+    "explorer_status": "FINALIZED",
+    "explorer_block": null,
+    "leader_execution_result": null,
+    "votes": {
+     "0x336458747913FE397be82c4F0926ACeB3ab13618": "idle",
+     "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "agree",
+     "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "agree",
+     "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "agree",
+     "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "idle"
+    },
+    "validators": [
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".6.bond_slash_wei..champion_payout_avt......o.match_id$valf.ok..status<SETTLED.verdict_band..SPLIT_DRAW_SETTLEMENT"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".6.bond_slash_wei..champion_payout_avt......o.match_id$valf.ok..status<SETTLED.verdict_band..SPLIT_DRAW_SETTLEMENT"
+     }
+    ],
+    "distinct_results": [
+     ".idle",
+     ".6.bond_slash_wei..champion_payout_avt......o.match_id$valf.ok..status<SETTLED.verdict_band..SPLIT_DRAW_SETTLEMENT"
+    ]
+   }
+  },
+  {
+   "label": "settle_elden",
+   "functionName": "claim_tournament_settlement",
+   "args": [
+    "eldenf"
+   ],
+   "value": "0",
+   "hash": "0xa8e0368a8ab5c94fee2527c2be0a614e61d56ccbfde96db55469b49eeb0b3523",
+   "signer": "0x154a452b0755EE812014C1405B15D905BA06f9c7",
+   "status": "FINALIZED",
+   "block": null,
+   "leader_execution_result": null,
+   "validator_votes": {
+    "0x045291B293B9D68969c18B6637A8258038cf787A": "idle",
+    "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "agree",
+    "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "idle",
+    "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+    "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "agree"
+   },
+   "validator_results": [
+    ".idle",
+    ".6.bond_slash_wei.......champion_payout_avt..........match_id4eldenf.ok..status<SETTLED.verdict_band..CHEAT_DISQUALIFICATION_SLASH"
+   ],
+   "validators": [
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": ".6.bond_slash_wei.......champion_payout_avt..........match_id4eldenf.ok..status<SETTLED.verdict_band..CHEAT_DISQUALIFICATION_SLASH"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": ".6.bond_slash_wei.......champion_payout_avt..........match_id4eldenf.ok..status<SETTLED.verdict_band..CHEAT_DISQUALIFICATION_SLASH"
+    },
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    }
+   ],
+   "waited_ms": 43377,
+   "result": null,
+   "explorer": {
+    "explorer_status": "FINALIZED",
+    "explorer_block": null,
+    "leader_execution_result": null,
+    "votes": {
+     "0x045291B293B9D68969c18B6637A8258038cf787A": "idle",
+     "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "agree",
+     "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "idle",
+     "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+     "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "agree"
+    },
+    "validators": [
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".6.bond_slash_wei.......champion_payout_avt..........match_id4eldenf.ok..status<SETTLED.verdict_band..CHEAT_DISQUALIFICATION_SLASH"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".6.bond_slash_wei.......champion_payout_avt..........match_id4eldenf.ok..status<SETTLED.verdict_band..CHEAT_DISQUALIFICATION_SLASH"
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     }
+    ],
+    "distinct_results": [
+     ".idle",
+     ".6.bond_slash_wei.......champion_payout_avt..........match_id4eldenf.ok..status<SETTLED.verdict_band..CHEAT_DISQUALIFICATION_SLASH"
+    ]
+   }
+  },
+  {
+   "label": "verify_cs2_attempt_1",
+   "functionName": "verify_match_telemetry",
+   "args": [
+    "cs2f"
+   ],
+   "value": "0",
+   "hash": "0x02ff2ab12a45e8f3856243444c8f731acca76992ffdf7c782a7031d36ccfa2b1",
+   "signer": "0x154a452b0755EE812014C1405B15D905BA06f9c7",
+   "status": "FINALIZED",
+   "block": null,
+   "leader_execution_result": null,
+   "validator_votes": {
+    "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "idle",
+    "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+    "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "idle",
+    "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "agree",
+    "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "agree"
+   },
+   "validator_results": [
+    ".F.match_id$cs2f.ok..protest_deadline_epoch....5.quantized_anomaly_bps.. quantized_integrity_baseline_bps....statusDVERIFIED.verdict_band..VERIFIED_CHAMPION_PAYOUT.verified_winner_slotTFINALIST_A",
+    ".idle"
+   ],
+   "validators": [
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": ".F.match_id$cs2f.ok..protest_deadline_epoch....5.quantized_anomaly_bps.. quantized_integrity_baseline_bps....statusDVERIFIED.verdict_band..VERIFIED_CHAMPION_PAYOUT.verified_winner_slotTFINALIST_A"
+    },
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": ".F.match_id$cs2f.ok..protest_deadline_epoch....5.quantized_anomaly_bps.. quantized_integrity_baseline_bps....statusDVERIFIED.verdict_band..VERIFIED_CHAMPION_PAYOUT.verified_winner_slotTFINALIST_A"
+    }
+   ],
+   "explorer": {
+    "explorer_status": "FINALIZED",
+    "explorer_block": null,
+    "leader_execution_result": null,
+    "votes": {
+     "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "idle",
+     "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+     "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "idle",
+     "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "agree",
+     "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "agree"
+    },
+    "validators": [
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".F.match_id$cs2f.ok..protest_deadline_epoch....5.quantized_anomaly_bps.. quantized_integrity_baseline_bps....statusDVERIFIED.verdict_band..VERIFIED_CHAMPION_PAY"
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".F.match_id$cs2f.ok..protest_deadline_epoch....5.quantized_anomaly_bps.. quantized_integrity_baseline_bps....statusDVERIFIED.verdict_band..VERIFIED_CHAMPION_PAY"
+     }
+    ],
+    "distinct_results": [
+     ".F.match_id$cs2f.ok..protest_deadline_epoch....5.quantized_anomaly_bps.. quantized_integrity_baseline_bps....statusDVERIFIED.verdict_band..VERIFIED_CHAMPION_PAY",
+     ".idle"
+    ]
+   }
+  },
+  {
+   "label": "settle_cs2_retry",
+   "functionName": "claim_tournament_settlement",
+   "args": [
+    "cs2f"
+   ],
+   "value": "0",
+   "hash": "0x6f46a9ea2e63acdd3694ceb7b82a598150691028b0dd20c3404c12065ab8c966",
+   "signer": "0x154a452b0755EE812014C1405B15D905BA06f9c7",
+   "status": "FINALIZED",
+   "block": null,
+   "leader_execution_result": null,
+   "validator_votes": {
+    "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "agree",
+    "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "agree",
+    "0x5e84e17266a193077728229751aC8A1dD24be146": "idle",
+    "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "agree",
+    "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "agree"
+   },
+   "validator_results": [
+    ".idle",
+    ".6.bond_slash_wei..champion_payout_avt..........match_id$cs2f.ok..status<SETTLED.verdict_band..VERIFIED_CHAMPION_PAYOUT"
+   ],
+   "validators": [
+    {
+     "mode": "validator",
+     "vote": "idle",
+     "result": ".idle"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": ".6.bond_slash_wei..champion_payout_avt..........match_id$cs2f.ok..status<SETTLED.verdict_band..VERIFIED_CHAMPION_PAYOUT"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": ".6.bond_slash_wei..champion_payout_avt..........match_id$cs2f.ok..status<SETTLED.verdict_band..VERIFIED_CHAMPION_PAYOUT"
+    },
+    {
+     "mode": "validator",
+     "vote": "agree",
+     "result": ".6.bond_slash_wei..champion_payout_avt..........match_id$cs2f.ok..status<SETTLED.verdict_band..VERIFIED_CHAMPION_PAYOUT"
+    }
+   ],
+   "explorer": {
+    "explorer_status": "FINALIZED",
+    "explorer_block": null,
+    "leader_execution_result": null,
+    "votes": {
+     "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "agree",
+     "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "agree",
+     "0x5e84e17266a193077728229751aC8A1dD24be146": "idle",
+     "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "agree",
+     "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "agree"
+    },
+    "validators": [
+     {
+      "mode": "validator",
+      "vote": "idle",
+      "result": ".idle"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".6.bond_slash_wei..champion_payout_avt..........match_id$cs2f.ok..status<SETTLED.verdict_band..VERIFIED_CHAMPION_PAYOUT"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".6.bond_slash_wei..champion_payout_avt..........match_id$cs2f.ok..status<SETTLED.verdict_band..VERIFIED_CHAMPION_PAYOUT"
+     },
+     {
+      "mode": "validator",
+      "vote": "agree",
+      "result": ".6.bond_slash_wei..champion_payout_avt..........match_id$cs2f.ok..status<SETTLED.verdict_band..VERIFIED_CHAMPION_PAYOUT"
+     }
+    ],
+    "distinct_results": [
+     ".idle",
+     ".6.bond_slash_wei..champion_payout_avt..........match_id$cs2f.ok..status<SETTLED.verdict_band..VERIFIED_CHAMPION_PAYOUT"
+    ]
+   }
+  }
+ ],
+ "final": {
+  "custody_summary": {
+   "abandoned_refund_count": 1,
+   "avt_invariant_balanced": true,
+   "escrowed_bond_total_wei": 0,
+   "escrowed_prize_total_avt": 0,
+   "escrowed_protest_total_wei": 0,
+   "native_custody_balance_wei": "80000000000000000",
+   "native_invariant_balanced": true,
+   "refundable_total_wei": "80000000000000000",
+   "settlement_count": 3,
+   "token_ledger_total_avt": "10000000000000000000",
+   "total_paid_out_avt": "6000000000000000000",
+   "total_refunds_released_wei": "20000000000000000",
+   "vault_custody_balance_avt": "10000000000000000000",
+   "void_count": 1
+  },
+  "leaderboard": [
+   {
+    "bond_a_wei": "10000000000000000",
+    "bond_b_wei": "10000000000000000",
+    "bond_slash_wei": 0,
+    "can_abandon_refund": false,
+    "can_post_bond": false,
+    "can_protest": false,
+    "can_settle": false,
+    "can_verify": false,
+    "champion_payout_avt": "2000000000000000000",
+    "derived_consistency_ok": true,
+    "finalist_a": "0xFa502b70Aca68C3a540302ba2115F3579C4cacDc",
+    "finalist_b": "0x38963bB05305cC22f357Dc87ef287e6f132941A5",
+    "game": "CS2",
+    "match_close_epoch": 1793568753,
+    "match_id": "cs2f",
+    "organizer": "0x154a452b0755EE812014C1405B15D905BA06f9c7",
+    "prize_pool_avt": "2000000000000000000",
+    "protest_bond_wei": "10000000000000000",
+    "protest_deadline_epoch": 1793569653,
+    "protest_filed": false,
+    "quantized_anomaly_bps": 500,
+    "quantized_integrity_baseline_bps": 9000,
+    "rulebook_url": "https://raw.githubusercontent.com/richeroveis/arena-veritas/main/docs/evidence/av-rulebook.html",
+    "runner_up_payout_avt": 0,
+    "status": "SETTLED",
+    "submission_close_epoch": 1793568453,
+    "telemetry_url": "https://raw.githubusercontent.com/richeroveis/arena-veritas/main/docs/evidence/cs2-major-telemetry.html",
+    "title": "CS2 Major Grand Final",
+    "verdict_band": "VERIFIED_CHAMPION_PAYOUT",
+    "verification_timeout_epoch": 1793573253,
+    "verified_winner_slot": "FINALIST_A"
+   },
+   {
+    "bond_a_wei": "10000000000000000",
+    "bond_b_wei": "10000000000000000",
+    "bond_slash_wei": 0,
+    "can_abandon_refund": false,
+    "can_post_bond": false,
+    "can_protest": false,
+    "can_settle": false,
+    "can_verify": false,
+    "champion_payout_avt": "1000000000000000000",
+    "derived_consistency_ok": true,
+    "finalist_a": "0xFa502b70Aca68C3a540302ba2115F3579C4cacDc",
+    "finalist_b": "0x38963bB05305cC22f357Dc87ef287e6f132941A5",
+    "game": "Valorant",
+    "match_close_epoch": 1793568755,
+    "match_id": "valf",
+    "organizer": "0x154a452b0755EE812014C1405B15D905BA06f9c7",
+    "prize_pool_avt": "2000000000000000000",
+    "protest_bond_wei": "10000000000000000",
+    "protest_deadline_epoch": 1793569655,
+    "protest_filed": false,
+    "quantized_anomaly_bps": 500,
+    "quantized_integrity_baseline_bps": 7500,
+    "rulebook_url": "https://raw.githubusercontent.com/richeroveis/arena-veritas/main/docs/evidence/av-rulebook.html",
+    "runner_up_payout_avt": "1000000000000000000",
+    "status": "SETTLED",
+    "submission_close_epoch": 1793568455,
+    "telemetry_url": "https://raw.githubusercontent.com/richeroveis/arena-veritas/main/docs/evidence/valorant-sovereign-telemetry.html",
+    "title": "Valorant Sovereign Cup",
+    "verdict_band": "SPLIT_DRAW_SETTLEMENT",
+    "verification_timeout_epoch": 1793573255,
+    "verified_winner_slot": "DRAW"
+   },
+   {
+    "bond_a_wei": "10000000000000000",
+    "bond_b_wei": "10000000000000000",
+    "bond_slash_wei": "10000000000000000",
+    "can_abandon_refund": false,
+    "can_post_bond": false,
+    "can_protest": false,
+    "can_settle": false,
+    "can_verify": false,
+    "champion_payout_avt": "2000000000000000000",
+    "derived_consistency_ok": true,
+    "finalist_a": "0xFa502b70Aca68C3a540302ba2115F3579C4cacDc",
+    "finalist_b": "0x38963bB05305cC22f357Dc87ef287e6f132941A5",
+    "game": "EldenRing",
+    "match_close_epoch": 1793568756,
+    "match_id": "eldenf",
+    "organizer": "0x154a452b0755EE812014C1405B15D905BA06f9c7",
+    "prize_pool_avt": "2000000000000000000",
+    "protest_bond_wei": "10000000000000000",
+    "protest_deadline_epoch": 1793569656,
+    "protest_filed": true,
+    "quantized_anomaly_bps": 4000,
+    "quantized_integrity_baseline_bps": 5000,
+    "rulebook_url": "https://raw.githubusercontent.com/richeroveis/arena-veritas/main/docs/evidence/av-rulebook.html",
+    "runner_up_payout_avt": 0,
+    "status": "SETTLED",
+    "submission_close_epoch": 1793568456,
+    "telemetry_url": "https://raw.githubusercontent.com/richeroveis/arena-veritas/main/docs/evidence/elden-ring-anypercent-telemetry.html",
+    "title": "Elden Ring Any% Speedrun WR Verification",
+    "verdict_band": "CHEAT_DISQUALIFICATION_SLASH",
+    "verification_timeout_epoch": 1793573256,
+    "verified_winner_slot": "FINALIST_B"
+   },
+   {
+    "bond_a_wei": 0,
+    "bond_b_wei": 0,
+    "bond_slash_wei": 0,
+    "can_abandon_refund": false,
+    "can_post_bond": false,
+    "can_protest": false,
+    "can_settle": false,
+    "can_verify": false,
+    "champion_payout_avt": 0,
+    "derived_consistency_ok": true,
+    "finalist_a": "0xFa502b70Aca68C3a540302ba2115F3579C4cacDc",
+    "finalist_b": "0x304F6Bb2E22C7C227AFC4A78F26ae5099649B1b0",
+    "game": "Dota2",
+    "match_close_epoch": 1793568758,
+    "match_id": "dotaf",
+    "organizer": "0x154a452b0755EE812014C1405B15D905BA06f9c7",
+    "prize_pool_avt": "2000000000000000000",
+    "protest_bond_wei": "10000000000000000",
+    "protest_deadline_epoch": 1793569658,
+    "protest_filed": false,
+    "quantized_anomaly_bps": 0,
+    "quantized_integrity_baseline_bps": 0,
+    "rulebook_url": "https://raw.githubusercontent.com/richeroveis/arena-veritas/main/docs/evidence/av-rulebook.html",
+    "runner_up_payout_avt": 0,
+    "status": "REFUNDED",
+    "submission_close_epoch": 1793568458,
+    "telemetry_url": "https://raw.githubusercontent.com/richeroveis/arena-veritas/main/docs/evidence/dota-saigon-telemetry.html",
+    "title": "Dota 2 Saigon Invitational",
+    "verdict_band": "VOID_NO_CONTEST_REFUND",
+    "verification_timeout_epoch": 1793573258,
+    "verified_winner_slot": "NONE"
+   }
+  ],
+  "wallets": {
+   "organizer": {
+    "address": "0x154a452b0755EE812014C1405B15D905BA06f9c7",
+    "avt_credit": "4000000000000000000",
+    "refundable_wei": "0",
+    "native_wei": "0x1f6a74a191eed2800"
+   },
+   "finalist_a": {
+    "address": "0xFa502b70Aca68C3a540302ba2115F3579C4cacDc",
+    "avt_credit": "3000000000000000000",
+    "refundable_wei": "30000000000000000",
+    "native_wei": "0x44b1eec6162f0000"
+   },
+   "finalist_b": {
+    "address": "0x38963bB05305cC22f357Dc87ef287e6f132941A5",
+    "avt_credit": "3000000000000000000",
+    "refundable_wei": "50000000000000000",
+    "native_wei": "0x44d575b885f00000"
+   },
+   "bystander": {
+    "address": "0x304F6Bb2E22C7C227AFC4A78F26ae5099649B1b0",
+    "avt_credit": "0",
+    "refundable_wei": "0",
+    "native_wei": "0x45400a8fd5330000"
+   },
+   "contract": {
+    "address": "0x1eC61228C0311150cAe42Af4d1C6C0bF847fc058",
+    "native_wei": "0x8c2a687ce7720000"
+   }
+  },
+  "native_after": {
+   "contract": "0x8c2a687ce7720000"
+  }
+ },
+ "updated_at": "2026-11-02T15:32:51.621Z",
+ "reconciled_at": "2026-11-02T15:52:28.780Z",
+ "non_finalized_count": 0
+}

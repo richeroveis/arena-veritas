@@ -1,0 +1,12 @@
+{
+  "account": "0x154a452b0755EE812014C1405B15D905BA06f9c7",
+  "contract": "0xd3aBC5bc71346035D69137a77e8D9CCD16BB89CB",
+  "amount": "10000000000000000",
+  "start_user": "36229999999904000000",
+  "after_deposit": "36219999999904000000",
+  "after_payout": "36219999999904000000",
+  "deposit_tx": "0xda2911f9fc55c49ec7ec389f5bd668946209cb12c772e384667484bf7a922022",
+  "payout_tx": "0x22adcb48754b002e271e121bc4c6a5cdb3dfc5d2dc81c3f81f31b8726a3380a9",
+  "conclusion": "emit_transfer to an EOA debited the contract (balance 0) but did not credit the wallet within 2 minutes on studionet; native GEN sent to an intelligent contract cannot be pushed back out to an EOA with the pinned runner. Refund methods therefore release custody claims in contract state and must be settled by the operator, and this is documented as an open platform limitation rather than a silent claim.",
+  "verified_at": "2026-11-01T21:29:48Z"
+}

@@ -6,7 +6,7 @@
   "description": "Studionet seeding and evidence collection scripts for ArenaVeritas",
   "dependencies": {
     "dotenv": "^16.4.5",
-    "genlayer-js": "^0.28.7",
+    "genlayer-js": "^1.1.8",
     "viem": "^2.21.0"
   }
 }
