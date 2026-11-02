@@ -230,7 +230,7 @@ window.walletSource = null;
 async function boot() {
   $("contract-link").textContent = contractAddress || "set VITE_CONTRACT_ADDRESS";
   $("contract-link").href = contractAddress
-    ? `https://studionet.explorer.genlayer.com/#/contracts/${contractAddress}` : "#";
+    ? `https://explorer-studio.genlayer.com/address/${contractAddress}` : "#";
   await refresh();
   $("btn-metamask").addEventListener("click", async () => {
     try {
