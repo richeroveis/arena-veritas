@@ -19,8 +19,9 @@ const SECRET_PATTERNS = {
 };
 
 // The address deployed before this one. Any survivor in the repo would point a
-// reviewer at a dead contract.
-const RETIRED_ADDRESS = /0x5226D715[0-9A-Fa-f]{0,32}/i;
+// reviewer at a dead contract. Built by concatenation so this file does not
+// itself contain the retired literal.
+const RETIRED_ADDRESS = new RegExp("0x5226" + "D715[0-9A-Fa-f]{0,32}", "i");
 
 const secretHits = [];
 const emDashHits = [];
