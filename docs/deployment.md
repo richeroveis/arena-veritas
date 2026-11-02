@@ -79,14 +79,15 @@ branch, built from `frontend/dist` with `base: "/arena-veritas/"`.
 | --- | --- |
 | Site | https://richeroveis.github.io/arena-veritas/ |
 | Pages config | `build_type=legacy`, source `gh-pages:/` |
-| Published build commit | `f2528ab778ead19f09c340b1a5a4e04a78f826e5` |
+| Published build | the `gh-pages` branch tip is authoritative; it advances on every publish run, so it is verified by content hash rather than by a pinned commit |
 | Branches and tag on the remote | `refs/heads/main`, `refs/heads/gh-pages`, `refs/tags/studionet-v1` |
 | `.nojekyll` | present, so the legacy build serves the Vite output untouched |
 
 Verified with `node scripts/verify_published_parity.mjs`: the pushed `main` files are
 byte-identical to the local working tree (text compared after newline
 normalization because `.gitattributes` stores LF while the Windows working copy
-keeps CRLF), and the live Pages assets are byte-identical to `frontend/dist`:
+keeps CRLF), the contract on remote main still hashes to the recorded sha256, and
+the live Pages assets are byte-identical to `frontend/dist`:
 
 ```text
 https://richeroveis.github.io/arena-veritas/                 200  6,162 B  text/html
