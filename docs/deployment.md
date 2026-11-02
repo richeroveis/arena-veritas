@@ -70,6 +70,52 @@ Summary of the stages:
 | Refund release | `claim_refundable_balance`, `withdraw_refund` | bystander, finalist A | soft-failed credit and overpaid surplus released |
 | Settlement | `claim_tournament_settlement` x3 | organizer | payouts after the protest deadline, invariants asserted in the same tx |
 
+## Published front end
+
+The Broadcast Control Room is served by GitHub Pages from the orphan `gh-pages`
+branch, built from `frontend/dist` with `base: "/arena-veritas/"`.
+
+| Item | Value |
+| --- | --- |
+| Site | https://richeroveis.github.io/arena-veritas/ |
+| Pages config | `build_type=legacy`, source `gh-pages:/` |
+| Published build commit | `f2528ab778ead19f09c340b1a5a4e04a78f826e5` |
+| Branches and tag on the remote | `refs/heads/main`, `refs/heads/gh-pages`, `refs/tags/studionet-v1` |
+| `.nojekyll` | present, so the legacy build serves the Vite output untouched |
+
+Verified with `node scripts/verify_published_parity.mjs`: the pushed `main` files are
+byte-identical to the local working tree (text compared after newline
+normalization because `.gitattributes` stores LF while the Windows working copy
+keeps CRLF), and the live Pages assets are byte-identical to `frontend/dist`:
+
+```text
+https://richeroveis.github.io/arena-veritas/                 200  6,162 B  text/html
+https://richeroveis.github.io/arena-veritas/logo.png         200  41,797 B image/png
+https://richeroveis.github.io/arena-veritas/demo-video-subtitled.mp4
+                                                             200  1,835,967 B video/mp4
+```
+
+The publish run itself is `pwsh -NoProfile -File scripts/publish_release.ps1`, and
+`node scripts/poll_published_site.mjs` waits until every published URL answers 200.
+The publish script reads `GITHUB_TOKEN` from this project's `.env`, passes it as an
+`http.extraHeader` Basic authorization for `x-access-token`, and pipes every
+command's output through a sanitizer that replaces the token and its base64 form.
+Nothing here stores the token in git, in a remote URL or in a log.
+
+`node scripts/verify_hygiene.mjs` is the pre-submission hygiene gate: secret
+patterns over every tracked file, a scan for the retired contract address, an em
+dash scan, and confirmation that `.env`, the burner key registry, the build output
+and the probe directory are all untracked.
+
+## Re-checking the deployed books
+
+`node scripts/live_state_check.mjs` calls only view methods and prints the
+custody summary, the four brackets, and each wallet's AVT credit, refundable
+balance and last payable rejection. The last run before this document was
+written returned both invariants true, `settlement_count=3`, `void_count=1`,
+`abandoned_refund_count=1`, and the four credits 4e18, 3e18, 3e18 and 0 summing
+to the vault's 10e18 AVT ledger total.
+
 ## Deployment gotchas found the hard way
 
 1. **Prose comments directly under the pinned header break the deploy.** The

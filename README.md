@@ -149,8 +149,20 @@ node scripts/live_state_check.mjs
 # brand assets and demo reel
 .venv/Scripts/python.exe scripts/render_arena_brand_assets.py
 .venv/Scripts/python.exe scripts/build_broadcast_demo_reel.py
+# reel container facts (size, duration, codecs) and caption comma audit
+.venv/Scripts/python.exe scripts/verify_demo_reel.py
+# submission form text measured against its limits
+.venv/Scripts/python.exe scripts/measure_submission_text.py
 # frontend
 cd frontend && npm install && npm run build
+# repository hygiene: secrets, retired address, em dash, ignore rules
+node scripts/verify_hygiene.mjs
+# pushed main and the live Pages build match this working tree byte for byte
+node scripts/verify_published_parity.mjs
+# wait until every published URL answers 200
+node scripts/poll_published_site.mjs
+# publish main, the tag and gh-pages (needs GITHUB_TOKEN in .env)
+pwsh -NoProfile -File scripts/publish_release.ps1
 ```
 
 Direct mode covers state transitions, every guard (wrong caller, wrong status,
