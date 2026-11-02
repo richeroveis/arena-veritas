@@ -144,6 +144,8 @@ read-only inspection.
 .venv/Scripts/python.exe -m pytest tests/test_arena_veritas_direct.py -q
 # live studionet lifecycle (resumable, writes evidence)
 node scripts/seed_studionet.mjs
+# read-only re-check of the deployed books (view methods only)
+node scripts/live_state_check.mjs
 # brand assets and demo reel
 .venv/Scripts/python.exe scripts/render_arena_brand_assets.py
 .venv/Scripts/python.exe scripts/build_broadcast_demo_reel.py
